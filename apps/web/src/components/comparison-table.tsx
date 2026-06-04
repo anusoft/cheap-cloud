@@ -19,8 +19,11 @@ import {
   fmtMoney,
   fmtUSD,
   heatColor,
+  perGbInUnit,
+  perVcpuInUnit,
   priceInUnit,
   unitSuffix,
+  unitWord,
 } from "../lib/view";
 
 interface Props {
@@ -152,6 +155,24 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
         },
         commitColumn("1yr", priceMode),
         commitColumn("3yr", priceMode),
+        {
+          id: "perVcpu",
+          header: `$/vCPU·${unitWord(priceMode)}`,
+          accessorFn: (r) => perVcpuInUnit(r, priceMode) ?? Infinity,
+          size: 108,
+          cell: ({ row }) => (
+            <span className="unit-cell">{fmtMoney(perVcpuInUnit(row.original, priceMode), priceMode)}</span>
+          ),
+        },
+        {
+          id: "perGb",
+          header: `$/GB·${unitWord(priceMode)}`,
+          accessorFn: (r) => perGbInUnit(r, priceMode) ?? Infinity,
+          size: 98,
+          cell: ({ row }) => (
+            <span className="unit-cell">{fmtMoney(perGbInUnit(row.original, priceMode), priceMode)}</span>
+          ),
+        },
       );
     }
 

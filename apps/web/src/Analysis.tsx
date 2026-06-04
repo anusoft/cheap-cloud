@@ -51,8 +51,13 @@ const T = {
   landscapeH: { en: "Provider landscape", th: "ผู้ให้บริการในไทย" },
   ga: { en: "GA in Thailand", th: "เปิดจริงในไทย" },
   proxy: { en: "Proxy (no Thai region)", th: "ตัวแทน (ไม่มีรีเจี้ยนไทย)" },
-  bench2H: { en: "Benchmark — 2 vCPU / 8 GB (cheapest per provider, monthly)", th: "เกณฑ์มาตรฐาน — 2 vCPU / 8 GB (ถูกสุดต่อผู้ให้บริการ, ต่อเดือน)" },
-  bench4H: { en: "Benchmark — 4 vCPU / 16 GB (cheapest per provider, monthly)", th: "เกณฑ์มาตรฐาน — 4 vCPU / 16 GB (ถูกสุดต่อผู้ให้บริการ, ต่อเดือน)" },
+  benchPrefix: { en: "Benchmark — ", th: "เกณฑ์มาตรฐาน — " },
+  benchSuffix: { en: " (cheapest per provider, monthly)", th: " (ถูกสุดต่อผู้ให้บริการ, ต่อเดือน)" },
+  benchH: { en: "Benchmarks by size", th: "เปรียบเทียบตามขนาดเครื่อง" },
+  benchNote: {
+    en: "Cheapest general-purpose / compute instance at each size, per provider — on-demand monthly, then 1-year and 3-year committed. Blank = no matching shape offered.",
+    th: "อินสแตนซ์แบบทั่วไป/คำนวณที่ถูกที่สุดในแต่ละขนาด ต่อผู้ให้บริการ — ราคา on-demand ต่อเดือน ตามด้วยสัญญา 1 ปีและ 3 ปี ช่องว่าง = ไม่มีรุ่นที่ตรงขนาด",
+  },
   colProvider: { en: "Provider", th: "ผู้ให้บริการ" },
   colInstance: { en: "Instance", th: "อินสแตนซ์" },
   colMonthly: { en: "On-demand /mo", th: "ราคา/เดือน" },
@@ -116,6 +121,16 @@ const LANDSCAPE: { provider: ProviderId; region: string; ga: boolean }[] = [
   { provider: "hetzner", region: "sin", ga: false },
 ];
 
+// vCPU/RAM configs to benchmark — small to large (8 GB → 128 GB). RAM windows
+// allow for slight per-provider variation around the nominal size.
+const BENCHMARKS = [
+  { vcpu: 2, ramMin: 7, ramMax: 9, label: "2 vCPU / 8 GB" },
+  { vcpu: 4, ramMin: 14, ramMax: 17, label: "4 vCPU / 16 GB" },
+  { vcpu: 8, ramMin: 30, ramMax: 33, label: "8 vCPU / 32 GB" },
+  { vcpu: 16, ramMin: 60, ramMax: 66, label: "16 vCPU / 64 GB" },
+  { vcpu: 32, ramMin: 120, ramMax: 132, label: "32 vCPU / 128 GB" },
+];
+
 export function Analysis() {
   const [lang, setLang] = useState<Lang>("en");
   const [snap, setSnap] = useState<Snapshot | null>(null);
@@ -123,8 +138,12 @@ export function Analysis() {
     loadSnapshot("bangkok").then(setSnap);
   }, []);
   const rows = (snap?.rows ?? []) as InstancePrice[];
-  const b2 = useMemo(() => bench(rows, 2, 7, 9), [rows]);
-  const b4 = useMemo(() => bench(rows, 4, 14, 16), [rows]);
+  const benches = useMemo(
+    () => BENCHMARKS.map((c) => ({ ...c, rows: bench(rows, c.vcpu, c.ramMin, c.ramMax) })),
+    [rows],
+  );
+  const b2 = benches[0]?.rows ?? [];
+  const b4 = benches[1]?.rows ?? [];
   const tr = <K extends keyof typeof T>(k: K) => T[k][lang] as string;
 
   const findings = useMemo(() => {
@@ -205,11 +224,14 @@ export function Analysis() {
           </div>
         </Section>
 
-        <Section title={tr("bench2H")}>
-          <BenchTable rows={b2} tr={tr} />
-        </Section>
-        <Section title={tr("bench4H")}>
-          <BenchTable rows={b4} tr={tr} />
+        <Section title={tr("benchH")}>
+          <p className="muted small">{tr("benchNote")}</p>
+          {benches.map((bm) => (
+            <div key={bm.label} className="bench-block">
+              <h3>{tr("benchPrefix") + bm.label + tr("benchSuffix")}</h3>
+              <BenchTable rows={bm.rows} tr={tr} />
+            </div>
+          ))}
         </Section>
 
         <Section title={tr("commitH")}>

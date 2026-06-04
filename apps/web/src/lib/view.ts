@@ -63,6 +63,19 @@ export function discountFor(r: InstancePrice, term: Term): number | null {
   return c ? c.discountPct : null;
 }
 
+// Per-vCPU-core and per-memory-GB cost in the selected unit ($/hr, $/mo, $/yr).
+export function perVcpuInUnit(r: InstancePrice, mode: PriceMode): number | null {
+  return r.perVcpuHourUSD == null ? null : r.perVcpuHourUSD * unitFactor(mode);
+}
+export function perGbInUnit(r: InstancePrice, mode: PriceMode): number | null {
+  return r.perGbHourUSD == null ? null : r.perGbHourUSD * unitFactor(mode);
+}
+
+// Short unit word for column headers: "mo" | "yr" | "hr".
+export function unitWord(mode: PriceMode): string {
+  return unitSuffix(mode).replace("$/", "");
+}
+
 export interface Filters {
   providers: Set<ProviderId>;
   families: Set<string>;
