@@ -222,6 +222,8 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
     },
     onSortingChange: setSorting,
     onExpandedChange: setExpanded,
+    autoResetExpanded: false,
+    autoResetAll: false,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getGroupedRowModel: getGroupedRowModel(),
@@ -260,6 +262,7 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
         <tbody style={{ height: virtualizer.getTotalSize(), position: "relative" }}>
           {virtualizer.getVirtualItems().map((vi) => {
             const row = tableRows[vi.index]!;
+            const posStyle = { transform: `translateY(${vi.start}px)` };
             // Fixed-height virtualization (every row is ROW_H px) — no
             // measureElement, so there is no per-row ResizeObserver to thrash.
             if (row.getIsGrouped()) {
@@ -267,7 +270,7 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
                 <tr
                   key={row.id}
                   className="group-row"
-                  style={{ height: ROW_H, transform: `translateY(${vi.start}px)` }}
+                  style={{ height: ROW_H, ...posStyle }}
                 >
                   <td className="group-cell">
                     <button className="group-toggle" onClick={row.getToggleExpandedHandler()}>
@@ -284,7 +287,7 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
               <tr
                 key={row.id}
                 className={pinned.has(row.original.id) ? "pinned" : ""}
-                style={{ height: ROW_H, transform: `translateY(${vi.start}px)` }}
+                style={{ height: ROW_H, ...posStyle }}
               >
                 {row.getVisibleCells().map((cell) => (
                   <td key={cell.id} style={{ width: cell.column.getSize() }}>
