@@ -3,14 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#0f1115" />
+    <style>
+      body { margin: 0; background: #0f1115; color: #e6e8ee; }
+      .boot { max-width: 820px; margin: 0 auto; padding: 40px 24px; font-family: ui-sans-serif, system-ui, sans-serif; line-height: 1.55; }
+      .boot h1 { font-size: 28px; letter-spacing: -0.02em; }
+      .boot a { color: #5b8cff; }
+      .boot .muted { color: #8b91a0; }
+    </style>
+
+    <title>cheap-cloud — Multi-Cloud VM Pricing Comparison (AWS, GCP, Azure, Tencent, Alibaba, Huawei, Hetzner)</title>
     <meta
       name="description"
-      content="Compare cloud VM pricing across AWS, GCP, Azure, Alibaba, Tencent, Huawei and Hetzner — normalized, with monthly/yearly and commitment pricing."
+      content="Compare cloud server (VM) pricing across 7 providers and 14 regions — normalized $/vCPU and $/GB, monthly/yearly, and 1-year/3-year commitment rates. Free and open-source, pulled live from each provider's official API. Includes a Thailand/Bangkok market analysis."
     />
-    <title>cheap-cloud · multi-cloud pricing comparison</title>
+    <meta
+      name="keywords"
+      content="cloud pricing comparison, AWS vs GCP vs Azure pricing, cheapest cloud VM, cloud server price comparison, Bangkok cloud pricing, Thailand cloud, Hetzner pricing, Tencent Cloud pricing, Alibaba Cloud pricing, Huawei Cloud, vCPU price, per GB RAM price, reserved instance, committed use discount"
+    />
+    <meta name="author" content="anusoft" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://anusoft.github.io/cheap-cloud/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="cheap-cloud" />
+    <meta property="og:title" content="cheap-cloud — Multi-Cloud VM Pricing Comparison" />
+    <meta
+      property="og:description"
+      content="Compare cloud VM pricing across AWS, GCP, Azure, Tencent, Alibaba, Huawei and Hetzner — normalized $/vCPU & $/GB, monthly/yearly, commitments. Live from official APIs."
+    />
+    <meta property="og:url" content="https://anusoft.github.io/cheap-cloud/" />
+    <meta property="og:image" content="https://anusoft.github.io/cheap-cloud/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="cheap-cloud — Multi-Cloud VM Pricing Comparison" />
+    <meta
+      name="twitter:description"
+      content="Compare cloud VM pricing across 7 providers & 14 regions — normalized $/vCPU & $/GB, monthly/yearly, commitments. Free & open-source."
+    />
+    <meta name="twitter:image" content="https://anusoft.github.io/cheap-cloud/og.svg" />
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "cheap-cloud",
+            "url": "https://anusoft.github.io/cheap-cloud/",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Multi-cloud VM pricing comparison across AWS, Google Cloud, Azure, Tencent, Alibaba, Huawei and Hetzner, with normalized per-vCPU and per-GB rates, monthly/yearly and commitment pricing.",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "author": { "@type": "Person", "name": "anusoft" }
+          },
+          {
+            "@type": "Dataset",
+            "name": "Multi-cloud VM pricing (14 regions, 7 providers)",
+            "description": "On-demand and committed VM pricing collected from official provider APIs (AWS Price List, GCP Billing Catalog, Azure Retail Prices, Alibaba/Tencent/Huawei APIs, Hetzner Cloud API), normalized to USD.",
+            "creator": { "@type": "Person", "name": "anusoft" },
+            "license": "https://opensource.org/licenses/MIT",
+            "keywords": ["cloud pricing", "vCPU", "RAM", "AWS", "GCP", "Azure", "Hetzner", "Tencent", "Alibaba", "Huawei"]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Crawlable boot content: replaced by the app on hydration, but present in
+         the initial HTML so crawlers that don't execute JS still get substance. -->
+    <div id="root">
+      <main class="boot">
+        <h1>cheap-cloud — multi-cloud VM pricing comparison</h1>
+        <p>
+          Compare virtual-machine (cloud server) pricing across <strong>seven providers</strong> —
+          AWS, Google Cloud, Microsoft Azure, Tencent Cloud, Alibaba Cloud, Huawei Cloud and
+          Hetzner — and <strong>14 regions</strong> worldwide. Prices are pulled live from each
+          provider's official API and normalized to USD, with per-vCPU and per-GB rates,
+          monthly/yearly views, and 1-year/3-year commitment (reserved / savings-plan /
+          subscription) pricing.
+        </p>
+        <p class="muted">Loading the live comparison…</p>
+        <ul>
+          <li>Normalized <strong>$/vCPU</strong> and <strong>$/GB</strong> unit economics</li>
+          <li>On-demand, 1-year and 3-year committed pricing side by side</li>
+          <li>Group and filter by provider, family (general / compute / memory / GPU), and architecture</li>
+          <li>Bilingual (English / ไทย) <a href="/cheap-cloud/#/analysis">Thailand &amp; Bangkok cloud pricing analysis</a></li>
+        </ul>
+      </main>
+    </div>
+    <noscript>
+      This is an interactive pricing comparison that requires JavaScript. It compares cloud VM
+      pricing across AWS, Google Cloud, Azure, Tencent, Alibaba, Huawei and Hetzner across 14
+      regions, with normalized $/vCPU and $/GB rates and 1yr/3yr commitment pricing. Source and
+      data: https://github.com/anusoft/cheap-cloud
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

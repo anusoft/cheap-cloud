@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f1115"/>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#161922"/>
+      <stop offset="1" stop-color="#12151d"/>
+    </linearGradient>
+  </defs>
+  <text x="80" y="170" font-family="ui-sans-serif,system-ui,sans-serif" font-size="76" font-weight="800" fill="#e6e8ee">cheap-cloud</text>
+  <text x="80" y="240" font-family="ui-sans-serif,system-ui,sans-serif" font-size="36" fill="#8b91a0">Multi-cloud VM pricing comparison</text>
+  <text x="80" y="340" font-family="ui-monospace,Menlo,monospace" font-size="30" fill="#36d399">7 providers · 14 regions · normalized $/vCPU &amp; $/GB</text>
+  <text x="80" y="392" font-family="ui-monospace,Menlo,monospace" font-size="30" fill="#36d399">monthly / yearly · 1yr &amp; 3yr commitments · live official APIs</text>
+  <g font-family="ui-sans-serif,system-ui,sans-serif" font-size="26" font-weight="700">
+    <rect x="80" y="470" width="150" height="56" rx="8" fill="#ff9900"/><text x="155" y="507" fill="#111" text-anchor="middle">AWS</text>
+    <rect x="246" y="470" width="120" height="56" rx="8" fill="#4285f4"/><text x="306" y="507" fill="#fff" text-anchor="middle">GCP</text>
+    <rect x="382" y="470" width="130" height="56" rx="8" fill="#0078d4"/><text x="447" y="507" fill="#fff" text-anchor="middle">Azure</text>
+    <rect x="528" y="470" width="150" height="56" rx="8" fill="#0052d9"/><text x="603" y="507" fill="#fff" text-anchor="middle">Tencent</text>
+    <rect x="694" y="470" width="150" height="56" rx="8" fill="#ff6a00"/><text x="769" y="507" fill="#fff" text-anchor="middle">Alibaba</text>
+    <rect x="860" y="470" width="150" height="56" rx="8" fill="#ff0000"/><text x="935" y="507" fill="#fff" text-anchor="middle">Huawei</text>
+    <rect x="1026" y="470" width="150" height="56" rx="8" fill="#d50c2d"/><text x="1101" y="507" fill="#fff" text-anchor="middle">Hetzner</text>
+  </g>
+  <text x="80" y="585" font-family="ui-monospace,Menlo,monospace" font-size="24" fill="#5b8cff">anusoft.github.io/cheap-cloud</text>
+</svg>

@@ -1,0 +1,5 @@
+# cheap-cloud — allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://anusoft.github.io/cheap-cloud/sitemap.xml
