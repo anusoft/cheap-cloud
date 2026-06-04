@@ -13,11 +13,12 @@ function commit(r: InstancePrice, term: "1yr" | "3yr"): number | null {
   return c ? c.effectiveHourlyUSD * 730 : null;
 }
 
-// Cheapest general/compute instance at an exact vCPU count + RAM window, per provider.
+// Cheapest instance at an exact vCPU count + RAM window, per provider. Covers
+// general/compute/memory families so both balanced and RAM-heavy shapes appear.
 function bench(rows: InstancePrice[], vcpu: number, ramMin: number, ramMax: number) {
   const out = new Map<ProviderId, InstancePrice>();
   for (const r of rows) {
-    if (r.family !== "general" && r.family !== "compute") continue;
+    if (!["general", "compute", "memory"].includes(r.family)) continue;
     if (r.vcpu !== vcpu || r.ramGiB < ramMin || r.ramGiB > ramMax) continue;
     if (!(r.monthlyUSD && r.monthlyUSD > 0)) continue;
     const cur = out.get(r.provider);
@@ -53,16 +54,22 @@ const T = {
   proxy: { en: "Proxy (no Thai region)", th: "ตัวแทน (ไม่มีรีเจี้ยนไทย)" },
   benchPrefix: { en: "Benchmark — ", th: "เกณฑ์มาตรฐาน — " },
   benchSuffix: { en: " (cheapest per provider, monthly)", th: " (ถูกสุดต่อผู้ให้บริการ, ต่อเดือน)" },
-  benchH: { en: "Benchmarks by size", th: "เปรียบเทียบตามขนาดเครื่อง" },
+  benchH: { en: "General-purpose benchmarks by size", th: "เปรียบเทียบเครื่องทั่วไปตามขนาด" },
   benchNote: {
-    en: "Cheapest general-purpose / compute instance at each size, per provider — on-demand monthly, then 1-year and 3-year committed. Blank = no matching shape offered.",
-    th: "อินสแตนซ์แบบทั่วไป/คำนวณที่ถูกที่สุดในแต่ละขนาด ต่อผู้ให้บริการ — ราคา on-demand ต่อเดือน ตามด้วยสัญญา 1 ปีและ 3 ปี ช่องว่าง = ไม่มีรุ่นที่ตรงขนาด",
+    en: "Cheapest balanced (≈4 GB/vCPU) instance at each size, per provider — on-demand monthly, then 1-year and 3-year committed. Blank = no matching shape offered.",
+    th: "อินสแตนซ์แบบสมดุล (~4 GB/vCPU) ที่ถูกที่สุดในแต่ละขนาด ต่อผู้ให้บริการ — ราคา on-demand ต่อเดือน ตามด้วยสัญญา 1 ปีและ 3 ปี ช่องว่าง = ไม่มีรุ่นที่ตรงขนาด",
+  },
+  memH: { en: "Memory-optimized benchmarks (databases & caches)", th: "เปรียบเทียบเครื่องหน่วยความจำสูง (ฐานข้อมูลและแคช)" },
+  memNote: {
+    en: "Cheapest RAM-heavy shape (≈8 GB/vCPU) per provider — the relevant comparison for in-memory databases, Redis/Memcached and analytics. Watch the $/GB column.",
+    th: "รุ่นที่เน้นหน่วยความจำสูง (~8 GB/vCPU) ที่ถูกที่สุดต่อผู้ให้บริการ — เหมาะกับฐานข้อมูลในหน่วยความจำ Redis/Memcached และงานวิเคราะห์ ให้สังเกตคอลัมน์ $/GB",
   },
   colProvider: { en: "Provider", th: "ผู้ให้บริการ" },
   colInstance: { en: "Instance", th: "อินสแตนซ์" },
   colMonthly: { en: "On-demand /mo", th: "ราคา/เดือน" },
   col1yr: { en: "1-yr /mo", th: "1 ปี /เดือน" },
   col3yr: { en: "3-yr /mo", th: "3 ปี /เดือน" },
+  colGb: { en: "$/GB·mo", th: "$/GB·เดือน" },
   hetznerH: { en: "Hetzner Singapore — the budget option", th: "Hetzner สิงคโปร์ — ตัวเลือกประหยัด" },
   hetzner: {
     en: [
@@ -131,6 +138,14 @@ const BENCHMARKS = [
   { vcpu: 32, ramMin: 120, ramMax: 132, label: "32 vCPU / 128 GB" },
 ];
 
+// Memory-optimized (~8 GB per vCPU) — database/cache workloads.
+const MEMORY_BENCHMARKS = [
+  { vcpu: 2, ramMin: 15, ramMax: 17, label: "2 vCPU / 16 GB" },
+  { vcpu: 4, ramMin: 30, ramMax: 34, label: "4 vCPU / 32 GB" },
+  { vcpu: 8, ramMin: 60, ramMax: 68, label: "8 vCPU / 64 GB" },
+  { vcpu: 16, ramMin: 120, ramMax: 136, label: "16 vCPU / 128 GB" },
+];
+
 export function Analysis() {
   const [lang, setLang] = useState<Lang>("en");
   const [snap, setSnap] = useState<Snapshot | null>(null);
@@ -140,6 +155,10 @@ export function Analysis() {
   const rows = (snap?.rows ?? []) as InstancePrice[];
   const benches = useMemo(
     () => BENCHMARKS.map((c) => ({ ...c, rows: bench(rows, c.vcpu, c.ramMin, c.ramMax) })),
+    [rows],
+  );
+  const memBenches = useMemo(
+    () => MEMORY_BENCHMARKS.map((c) => ({ ...c, rows: bench(rows, c.vcpu, c.ramMin, c.ramMax) })),
     [rows],
   );
   const b2 = benches[0]?.rows ?? [];
@@ -234,6 +253,16 @@ export function Analysis() {
           ))}
         </Section>
 
+        <Section title={tr("memH")}>
+          <p className="muted small">{tr("memNote")}</p>
+          {memBenches.map((bm) => (
+            <div key={bm.label} className="bench-block">
+              <h3>{tr("benchPrefix") + bm.label + tr("benchSuffix")}</h3>
+              <BenchTable rows={bm.rows} tr={tr} />
+            </div>
+          ))}
+        </Section>
+
         <Section title={tr("commitH")}>
           {T.commit[lang].map((p, i) => (
             <p key={i}>{p}</p>
@@ -298,6 +327,7 @@ function BenchTable({
           <th>{tr("colMonthly")}</th>
           <th>{tr("col1yr")}</th>
           <th>{tr("col3yr")}</th>
+          <th>{tr("colGb")}</th>
         </tr>
       </thead>
       <tbody>
@@ -313,6 +343,9 @@ function BenchTable({
             <td className="num strong">{usd(r.monthlyUSD)}</td>
             <td className="num">{usd(commit(r, "1yr"))}</td>
             <td className="num">{usd(commit(r, "3yr"))}</td>
+            <td className="num muted">
+              {r.perGbHourUSD == null ? "—" : `$${(r.perGbHourUSD * 730).toFixed(2)}`}
+            </td>
           </tr>
         ))}
       </tbody>

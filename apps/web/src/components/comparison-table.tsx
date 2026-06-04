@@ -1,15 +1,19 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   type ColumnDef,
+  type ExpandedState,
   type SortingState,
   flexRender,
   getCoreRowModel,
+  getExpandedRowModel,
+  getGroupedRowModel,
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 import { useVirtualizer } from "@tanstack/react-virtual";
 import type { InstancePrice } from "@cheap-cloud/schema";
 import {
+  type GroupBy,
   type PriceMode,
   type Term,
   PROVIDER_COLORS,
@@ -29,14 +33,17 @@ import {
 interface Props {
   rows: InstancePrice[];
   priceMode: PriceMode;
+  groupBy: GroupBy;
   pinned: Set<string>;
   onTogglePin: (id: string) => void;
 }
 
-export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props) {
+export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin }: Props) {
   const [sorting, setSorting] = useState<SortingState>([
     { id: "ondemand", desc: false },
   ]);
+  const [expanded, setExpanded] = useState<ExpandedState>(true);
+  useEffect(() => setExpanded(true), [groupBy]); // expand all when grouping changes
 
   // Heat-map bounds for the on-demand price across the visible rows.
   const bounds = useMemo(() => {
@@ -112,6 +119,7 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
           id: "ondemand",
           header: "$/vCPU-hr",
           accessorFn: (r) => r.perVcpuHourUSD ?? Infinity,
+          aggregationFn: "min",
           size: 120,
           cell: ({ row }) => {
             const v = row.original.perVcpuHourUSD;
@@ -140,6 +148,7 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
           id: "ondemand",
           header: `On-demand ${suffix}`,
           accessorFn: (r) => priceInUnit(r, priceMode) ?? Infinity,
+          aggregationFn: "min",
           size: 150,
           cell: ({ row }) => {
             const v = priceInUnit(row.original, priceMode);
@@ -198,10 +207,17 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
   const table = useReactTable({
     data: rows,
     columns,
-    state: { sorting },
+    state: {
+      sorting,
+      expanded,
+      grouping: groupBy === "none" ? [] : [groupBy],
+    },
     onSortingChange: setSorting,
+    onExpandedChange: setExpanded,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
+    getGroupedRowModel: getGroupedRowModel(),
+    getExpandedRowModel: getExpandedRowModel(),
   });
 
   const tableRows = table.getRowModel().rows;
@@ -236,6 +252,26 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
         <tbody style={{ height: virtualizer.getTotalSize(), position: "relative" }}>
           {virtualizer.getVirtualItems().map((vi) => {
             const row = tableRows[vi.index]!;
+            if (row.getIsGrouped()) {
+              return (
+                <tr
+                  key={row.id}
+                  data-index={vi.index}
+                  ref={virtualizer.measureElement}
+                  className="group-row"
+                  style={{ transform: `translateY(${vi.start}px)` }}
+                >
+                  <td className="group-cell">
+                    <button className="group-toggle" onClick={row.getToggleExpandedHandler()}>
+                      {row.getIsExpanded() ? "▾" : "▸"}
+                    </button>
+                    <GroupLabel groupBy={groupBy} value={String(row.getGroupingValue(groupBy))} />
+                    <span className="group-count">{row.subRows.length}</span>
+                    <GroupMeta leaves={row.subRows.map((s) => s.original)} priceMode={priceMode} />
+                  </td>
+                </tr>
+              );
+            }
             return (
               <tr
                 key={row.id}
@@ -255,6 +291,47 @@ export function ComparisonTable({ rows, priceMode, pinned, onTogglePin }: Props)
         </tbody>
       </table>
     </div>
+  );
+}
+
+function GroupLabel({ groupBy, value }: { groupBy: GroupBy; value: string }) {
+  if (groupBy === "provider") {
+    const p = value as keyof typeof PROVIDER_LABELS;
+    return (
+      <span className="badge" style={{ background: PROVIDER_COLORS[p] }}>
+        {PROVIDER_LABELS[p] ?? value}
+      </span>
+    );
+  }
+  if (groupBy === "arch") {
+    return <span className="group-name">{value === "arm64" ? "Arm64" : "x86-64"}</span>;
+  }
+  return <span className="group-name">{value}</span>;
+}
+
+// Per-group insight: instance count, cheapest on-demand, and best $/vCPU.
+function GroupMeta({ leaves, priceMode }: { leaves: InstancePrice[]; priceMode: PriceMode }) {
+  const norm = priceMode === "normalized";
+  const prices = leaves
+    .map((l) => (norm ? l.perVcpuHourUSD : priceInUnit(l, priceMode)))
+    .filter((v): v is number => v != null && Number.isFinite(v));
+  const vcpus = leaves
+    .map((l) => (norm ? l.perVcpuHourUSD : perVcpuInUnit(l, priceMode)))
+    .filter((v): v is number => v != null && Number.isFinite(v));
+  if (prices.length === 0) return null;
+  const minP = Math.min(...prices);
+  const minV = vcpus.length ? Math.min(...vcpus) : null;
+  const fp = (v: number) => (norm ? fmtUSD(v, 4) : fmtMoney(v, priceMode));
+  return (
+    <span className="group-meta">
+      from <b>{fp(minP)}</b>
+      {norm ? "/vCPU-hr" : ""}
+      {!norm && minV != null && (
+        <>
+          {" · "}best {fmtMoney(minV, priceMode)}/vCPU·{unitWord(priceMode)}
+        </>
+      )}
+    </span>
   );
 }
 

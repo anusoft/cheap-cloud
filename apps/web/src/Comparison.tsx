@@ -3,6 +3,7 @@ import type { InstancePrice, Snapshot } from "@cheap-cloud/schema";
 import { loadRegions, loadSnapshot, type RegionMeta } from "./lib/data";
 import {
   type Filters,
+  type GroupBy,
   type PriceMode,
   PROVIDER_LABELS,
   applyFilters,
@@ -36,6 +37,7 @@ export function Comparison() {
   const [loading, setLoading] = useState(true);
 
   const [priceMode, setPriceMode] = useState<PriceMode>("monthly");
+  const [groupBy, setGroupBy] = useState<GroupBy>("none");
   const [pinned, setPinned] = useState<Set<string>>(new Set());
   const [filters, setFilters] = useState<Filters>(emptyFilters);
 
@@ -165,6 +167,8 @@ export function Comparison() {
               setFilters={setFilters}
               priceMode={priceMode}
               setPriceMode={setPriceMode}
+              groupBy={groupBy}
+              setGroupBy={setGroupBy}
               shown={filtered.length}
               total={all.length}
             />
@@ -210,6 +214,7 @@ export function Comparison() {
             <ComparisonTable
               rows={filtered}
               priceMode={priceMode}
+              groupBy={groupBy}
               pinned={pinned}
               onTogglePin={togglePin}
             />

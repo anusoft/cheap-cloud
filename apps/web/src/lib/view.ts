@@ -23,6 +23,7 @@ export const PROVIDER_COLORS: Record<ProviderId, string> = {
 // Default is monthly. "normalized" shows per-vCPU/per-GB unit economics.
 export type PriceMode = "monthly" | "yearly" | "hourly" | "normalized";
 export type Term = "1yr" | "3yr";
+export type GroupBy = "none" | "provider" | "family" | "arch";
 
 const HOURS = { monthly: 730, yearly: 8760, hourly: 1, normalized: 730 } as const;
 

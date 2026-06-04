@@ -109,6 +109,16 @@ table.grid { border-collapse: collapse; table-layout: fixed; }
 
 .empty { padding: 40px; color: var(--muted); }
 
+/* ── grouped rows ───────────────────────────────────────────────────── */
+.grid tbody tr.group-row { background: #1a2030; border-bottom: 1px solid var(--line); }
+.grid tbody tr.group-row:hover { background: #1e2538; }
+.group-cell { flex: 1; display: flex; align-items: center; gap: 10px; padding: 6px 10px; font-size: 12px; }
+.group-toggle { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 11px; width: 14px; padding: 0; }
+.group-name { font-weight: 700; text-transform: capitalize; }
+.group-count { background: var(--panel-2); border: 1px solid var(--line); color: var(--muted); border-radius: 10px; padding: 0 8px; font-size: 11px; }
+.group-meta { color: var(--muted); }
+.group-meta b { color: var(--accent-2); font-weight: 700; }
+
 /* ── nav + analysis page ────────────────────────────────────────────── */
 .nav-link { color: var(--accent); text-decoration: none; font-size: 12px; font-weight: 600; white-space: nowrap; padding: 5px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel-2); }
 .nav-link:hover { border-color: var(--accent); }

@@ -1,6 +1,7 @@
 import type { InstancePrice, ProviderId } from "@cheap-cloud/schema";
 import {
   type Filters,
+  type GroupBy,
   type PriceMode,
   PROVIDER_COLORS,
   PROVIDER_LABELS,
@@ -12,6 +13,8 @@ interface Props {
   setFilters: (f: Filters) => void;
   priceMode: PriceMode;
   setPriceMode: (m: PriceMode) => void;
+  groupBy: GroupBy;
+  setGroupBy: (g: GroupBy) => void;
   shown: number;
   total: number;
 }
@@ -28,6 +31,8 @@ export function FacetedFilters({
   setFilters,
   priceMode,
   setPriceMode,
+  groupBy,
+  setGroupBy,
   shown,
   total,
 }: Props) {
@@ -66,6 +71,24 @@ export function FacetedFilters({
           ))}
         </div>
         <div className="hint">On-demand · 1yr · 3yr shown as columns</div>
+      </div>
+
+      <div className="filter-block">
+        <label className="lbl">Group by</label>
+        <div className="seg">
+          {(
+            [
+              ["none", "None"],
+              ["provider", "Provider"],
+              ["family", "Family"],
+              ["arch", "Arch"],
+            ] as [GroupBy, string][]
+          ).map(([g, label]) => (
+            <button key={g} className={groupBy === g ? "on" : ""} onClick={() => setGroupBy(g)}>
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="filter-block">
