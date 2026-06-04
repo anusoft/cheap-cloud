@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import type { InstancePrice, ProviderId } from "@cheap-cloud/schema";
 import {
   type Filters,
@@ -6,6 +7,30 @@ import {
   PROVIDER_COLORS,
   PROVIDER_LABELS,
 } from "../lib/view";
+
+// Number filter with LOCAL string state, committed to the parent on a debounce.
+// This keeps typing instant (no controlled-number fighting) and re-renders the
+// big table at most once after you pause — fixes the typing freeze.
+function NumInput({ value, onCommit }: { value: number; onCommit: (n: number) => void }) {
+  const [local, setLocal] = useState(String(value));
+  useEffect(() => setLocal(String(value)), [value]);
+  useEffect(() => {
+    const id = setTimeout(() => {
+      const n = local.trim() === "" ? 0 : Number(local);
+      if (Number.isFinite(n) && n !== value) onCommit(n);
+    }, 250);
+    return () => clearTimeout(id);
+  }, [local]); // eslint-disable-line react-hooks/exhaustive-deps
+  return (
+    <input
+      type="number"
+      min={0}
+      inputMode="numeric"
+      value={local}
+      onChange={(e) => setLocal(e.target.value)}
+    />
+  );
+}
 
 interface Props {
   all: InstancePrice[];
@@ -137,36 +162,16 @@ export function FacetedFilters({
       <div className="filter-block">
         <label className="lbl">vCPU: {filters.vcpuMin}–{filters.vcpuMax}</label>
         <div className="range-row">
-          <input
-            type="number"
-            min={0}
-            value={filters.vcpuMin}
-            onChange={(e) => setFilters({ ...filters, vcpuMin: Number(e.target.value) })}
-          />
-          <input
-            type="number"
-            min={0}
-            value={filters.vcpuMax}
-            onChange={(e) => setFilters({ ...filters, vcpuMax: Number(e.target.value) })}
-          />
+          <NumInput value={filters.vcpuMin} onCommit={(n) => setFilters({ ...filters, vcpuMin: n })} />
+          <NumInput value={filters.vcpuMax} onCommit={(n) => setFilters({ ...filters, vcpuMax: n })} />
         </div>
       </div>
 
       <div className="filter-block">
         <label className="lbl">RAM GiB: {filters.ramMin}–{filters.ramMax}</label>
         <div className="range-row">
-          <input
-            type="number"
-            min={0}
-            value={filters.ramMin}
-            onChange={(e) => setFilters({ ...filters, ramMin: Number(e.target.value) })}
-          />
-          <input
-            type="number"
-            min={0}
-            value={filters.ramMax}
-            onChange={(e) => setFilters({ ...filters, ramMax: Number(e.target.value) })}
-          />
+          <NumInput value={filters.ramMin} onCommit={(n) => setFilters({ ...filters, ramMin: n })} />
+          <NumInput value={filters.ramMax} onCommit={(n) => setFilters({ ...filters, ramMax: n })} />
         </div>
       </div>
     </div>

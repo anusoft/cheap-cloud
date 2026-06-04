@@ -93,12 +93,13 @@ export function Comparison() {
   const pinnedRows = useMemo(() => all.filter((r) => pinned.has(r.id)), [all, pinned]);
   const regionMeta = regions.find((r) => r.key === regionKey);
 
-  const togglePin = (id: string) =>
+  const togglePin = useCallback((id: string) => {
     setPinned((s) => {
       const next = new Set(s);
       next.has(id) ? next.delete(id) : next.add(id);
       return next;
     });
+  }, []);
 
   // Cheapest in the CURRENTLY SELECTED unit, recomputed on every filter change.
   const cheapest = useMemo(() => {
