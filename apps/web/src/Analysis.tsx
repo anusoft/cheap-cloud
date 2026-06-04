@@ -344,7 +344,7 @@ function BenchTable({
             <td className="num">{usd(commit(r, "1yr"))}</td>
             <td className="num">{usd(commit(r, "3yr"))}</td>
             <td className="num muted">
-              {r.perGbHourUSD == null ? "—" : `$${(r.perGbHourUSD * 730).toFixed(2)}`}
+              {r.monthlyUSD && r.ramGiB ? `$${(r.monthlyUSD / r.ramGiB).toFixed(2)}` : "—"}
             </td>
           </tr>
         ))}
