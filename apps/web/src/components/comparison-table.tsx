@@ -30,6 +30,8 @@ import {
   unitWord,
 } from "../lib/view";
 
+const ROW_H = 34; // fixed row height (px) — must match the CSS row height
+
 interface Props {
   rows: InstancePrice[];
   priceMode: PriceMode;
@@ -47,10 +49,16 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
 
   // Heat-map bounds for the on-demand price across the visible rows.
   const bounds = useMemo(() => {
-    const vals = rows
-      .map((r) => (priceMode === "normalized" ? r.perVcpuHourUSD : priceInUnit(r, priceMode)))
-      .filter((v): v is number => v != null && Number.isFinite(v));
-    return { min: Math.min(...vals), max: Math.max(...vals) };
+    let min = Infinity;
+    let max = -Infinity;
+    for (const r of rows) {
+      const v = priceMode === "normalized" ? r.perVcpuHourUSD : priceInUnit(r, priceMode);
+      if (v != null && Number.isFinite(v)) {
+        if (v < min) min = v;
+        if (v > max) max = v;
+      }
+    }
+    return { min, max };
   }, [rows, priceMode]);
 
   const columns = useMemo<ColumnDef<InstancePrice>[]>(() => {
@@ -225,7 +233,7 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
   const virtualizer = useVirtualizer({
     count: tableRows.length,
     getScrollElement: () => parentRef.current,
-    estimateSize: () => 34,
+    estimateSize: () => ROW_H,
     overscan: 16,
   });
 
@@ -252,14 +260,14 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
         <tbody style={{ height: virtualizer.getTotalSize(), position: "relative" }}>
           {virtualizer.getVirtualItems().map((vi) => {
             const row = tableRows[vi.index]!;
+            // Fixed-height virtualization (every row is ROW_H px) — no
+            // measureElement, so there is no per-row ResizeObserver to thrash.
             if (row.getIsGrouped()) {
               return (
                 <tr
                   key={row.id}
-                  data-index={vi.index}
-                  ref={virtualizer.measureElement}
                   className="group-row"
-                  style={{ transform: `translateY(${vi.start}px)` }}
+                  style={{ height: ROW_H, transform: `translateY(${vi.start}px)` }}
                 >
                   <td className="group-cell">
                     <button className="group-toggle" onClick={row.getToggleExpandedHandler()}>
@@ -275,10 +283,8 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
             return (
               <tr
                 key={row.id}
-                data-index={vi.index}
-                ref={virtualizer.measureElement}
                 className={pinned.has(row.original.id) ? "pinned" : ""}
-                style={{ transform: `translateY(${vi.start}px)` }}
+                style={{ height: ROW_H, transform: `translateY(${vi.start}px)` }}
               >
                 {row.getVisibleCells().map((cell) => (
                   <td key={cell.id} style={{ width: cell.column.getSize() }}>

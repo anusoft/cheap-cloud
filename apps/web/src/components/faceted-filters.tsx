@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { InstancePrice, ProviderId } from "@cheap-cloud/schema";
 import {
   type Filters,
@@ -61,9 +61,9 @@ export function FacetedFilters({
   shown,
   total,
 }: Props) {
-  const providers = [...new Set(all.map((r) => r.provider))] as ProviderId[];
-  const families = [...new Set(all.map((r) => r.family))].sort();
-  const archs = [...new Set(all.map((r) => r.arch))].sort();
+  const providers = useMemo(() => [...new Set(all.map((r) => r.provider))] as ProviderId[], [all]);
+  const families = useMemo(() => [...new Set(all.map((r) => r.family))].sort(), [all]);
+  const archs = useMemo(() => [...new Set(all.map((r) => r.arch))].sort(), [all]);
 
   return (
     <div className="filter-content">
