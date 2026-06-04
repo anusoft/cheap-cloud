@@ -1,0 +1,2945 @@
+{
+  "schemaVersion": 1,
+  "regionKey": "helsinki",
+  "generatedAt": "2026-06-04T08:29:04.419Z",
+  "providers": [
+    "hetzner",
+    "azure",
+    "gcp"
+  ],
+  "rows": [
+    {
+      "id": "gcp:europe-north1:e2-standard-2",
+      "provider": "gcp",
+      "instanceName": "e2-standard-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.07377755999999999,
+      "monthlyUSD": 53.8576188,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.046479856,
+          "discountPct": 0.3700000921689467
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.033199901999999996,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-standard-4",
+      "provider": "gcp",
+      "instanceName": "e2-standard-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.14755511999999998,
+      "monthlyUSD": 107.7152376,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.092959712,
+          "discountPct": 0.3700000921689467
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.06639980399999999,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-standard-8",
+      "provider": "gcp",
+      "instanceName": "e2-standard-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.29511023999999997,
+      "monthlyUSD": 215.4304752,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.185919424,
+          "discountPct": 0.3700000921689467
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.13279960799999999,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-standard-16",
+      "provider": "gcp",
+      "instanceName": "e2-standard-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.5902204799999999,
+      "monthlyUSD": 430.8609504,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.371838848,
+          "discountPct": 0.3700000921689467
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.26559921599999997,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-standard-32",
+      "provider": "gcp",
+      "instanceName": "e2-standard-32",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 1.1804409599999999,
+      "monthlyUSD": 861.7219008,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.743677696,
+          "discountPct": 0.3700000921689467
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5311984319999999,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highmem-2",
+      "provider": "gcp",
+      "instanceName": "e2-highmem-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.09952284,
+      "monthlyUSD": 72.6516732,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.062699376,
+          "discountPct": 0.370000132632871
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.044785278,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highmem-4",
+      "provider": "gcp",
+      "instanceName": "e2-highmem-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.19904568,
+      "monthlyUSD": 145.3033464,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.125398752,
+          "discountPct": 0.370000132632871
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.089570556,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highmem-8",
+      "provider": "gcp",
+      "instanceName": "e2-highmem-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.39809136,
+      "monthlyUSD": 290.6066928,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.250797504,
+          "discountPct": 0.370000132632871
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.179141112,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highmem-16",
+      "provider": "gcp",
+      "instanceName": "e2-highmem-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 0.79618272,
+      "monthlyUSD": 581.2133856,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.501595008,
+          "discountPct": 0.370000132632871
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.358282224,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highcpu-2",
+      "provider": "gcp",
+      "instanceName": "e2-highcpu-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 2,
+      "onDemandHourlyUSD": 0.0544686,
+      "monthlyUSD": 39.762078,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.034315215999999996,
+          "discountPct": 0.370000036718403
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.024510869999999997,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highcpu-4",
+      "provider": "gcp",
+      "instanceName": "e2-highcpu-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.1089372,
+      "monthlyUSD": 79.524156,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.06863043199999999,
+          "discountPct": 0.370000036718403
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.049021739999999994,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highcpu-8",
+      "provider": "gcp",
+      "instanceName": "e2-highcpu-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.2178744,
+      "monthlyUSD": 159.048312,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.13726086399999998,
+          "discountPct": 0.370000036718403
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.09804347999999999,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highcpu-16",
+      "provider": "gcp",
+      "instanceName": "e2-highcpu-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.4357488,
+      "monthlyUSD": 318.096624,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.27452172799999996,
+          "discountPct": 0.370000036718403
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.19608695999999998,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:e2-highcpu-32",
+      "provider": "gcp",
+      "instanceName": "e2-highcpu-32",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.8714976,
+      "monthlyUSD": 636.193248,
+      "perVcpuHourUSD": 0.02401614,
+      "perGbHourUSD": 0.00321816,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5490434559999999,
+          "discountPct": 0.370000036718403
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.39217391999999995,
+          "discountPct": 0.55
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-standard-2",
+      "provider": "gcp",
+      "instanceName": "n2-standard-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.10692399999999999,
+      "monthlyUSD": 78.05452,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.067354,
+          "discountPct": 0.3700759417904306
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.048114000000000004,
+          "discountPct": 0.5500168343870412
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-standard-4",
+      "provider": "gcp",
+      "instanceName": "n2-standard-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.21384799999999998,
+      "monthlyUSD": 156.10904,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.134708,
+          "discountPct": 0.3700759417904306
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.09622800000000001,
+          "discountPct": 0.5500168343870412
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-standard-8",
+      "provider": "gcp",
+      "instanceName": "n2-standard-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.42769599999999997,
+      "monthlyUSD": 312.21808,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.269416,
+          "discountPct": 0.3700759417904306
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.19245600000000002,
+          "discountPct": 0.5500168343870412
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-standard-16",
+      "provider": "gcp",
+      "instanceName": "n2-standard-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.8553919999999999,
+      "monthlyUSD": 624.43616,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.538832,
+          "discountPct": 0.3700759417904306
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.38491200000000003,
+          "discountPct": 0.5500168343870412
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-standard-32",
+      "provider": "gcp",
+      "instanceName": "n2-standard-32",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 1.7107839999999999,
+      "monthlyUSD": 1248.87232,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.077664,
+          "discountPct": 0.3700759417904306
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.7698240000000001,
+          "discountPct": 0.5500168343870412
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highmem-2",
+      "provider": "gcp",
+      "instanceName": "n2-highmem-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.14423599999999998,
+      "monthlyUSD": 105.29227999999998,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.090858,
+          "discountPct": 0.3700740453146232
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.064906,
+          "discountPct": 0.5500013866163787
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highmem-4",
+      "provider": "gcp",
+      "instanceName": "n2-highmem-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.28847199999999995,
+      "monthlyUSD": 210.58455999999995,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.181716,
+          "discountPct": 0.3700740453146232
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.129812,
+          "discountPct": 0.5500013866163787
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highmem-8",
+      "provider": "gcp",
+      "instanceName": "n2-highmem-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.5769439999999999,
+      "monthlyUSD": 421.1691199999999,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.363432,
+          "discountPct": 0.3700740453146232
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.259624,
+          "discountPct": 0.5500013866163787
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highmem-16",
+      "provider": "gcp",
+      "instanceName": "n2-highmem-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 1.1538879999999998,
+      "monthlyUSD": 842.3382399999998,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.726864,
+          "discountPct": 0.3700740453146232
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.519248,
+          "discountPct": 0.5500013866163787
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highcpu-2",
+      "provider": "gcp",
+      "instanceName": "n2-highcpu-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 2,
+      "onDemandHourlyUSD": 0.07894,
+      "monthlyUSD": 57.6262,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.049726,
+          "discountPct": 0.3700785406637953
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.03552,
+          "discountPct": 0.5500380035469976
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highcpu-4",
+      "provider": "gcp",
+      "instanceName": "n2-highcpu-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.15788,
+      "monthlyUSD": 115.2524,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.099452,
+          "discountPct": 0.3700785406637953
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.07104,
+          "discountPct": 0.5500380035469976
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highcpu-8",
+      "provider": "gcp",
+      "instanceName": "n2-highcpu-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.31576,
+      "monthlyUSD": 230.5048,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.198904,
+          "discountPct": 0.3700785406637953
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.14208,
+          "discountPct": 0.5500380035469976
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highcpu-16",
+      "provider": "gcp",
+      "instanceName": "n2-highcpu-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.63152,
+      "monthlyUSD": 461.0096,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.397808,
+          "discountPct": 0.3700785406637953
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.28416,
+          "discountPct": 0.5500380035469976
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n2-highcpu-32",
+      "provider": "gcp",
+      "instanceName": "n2-highcpu-32",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 1.26304,
+      "monthlyUSD": 922.0192,
+      "perVcpuHourUSD": 0.034806,
+      "perGbHourUSD": 0.004664,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.795616,
+          "discountPct": 0.3700785406637953
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.56832,
+          "discountPct": 0.5500380035469976
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c3-standard-4",
+      "provider": "gcp",
+      "instanceName": "c3-standard-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.22199056,
+      "monthlyUSD": 162.0531088,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.00433613,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.13985732,
+          "discountPct": 0.3699852822570473
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.09989619999999999,
+          "discountPct": 0.5499979818961671
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c3-standard-8",
+      "provider": "gcp",
+      "instanceName": "c3-standard-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.44398112,
+      "monthlyUSD": 324.1062176,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.00433613,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.27971464,
+          "discountPct": 0.3699852822570473
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.19979239999999998,
+          "discountPct": 0.5499979818961671
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c3-standard-22",
+      "provider": "gcp",
+      "instanceName": "c3-standard-22",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 22,
+      "ramGiB": 88,
+      "onDemandHourlyUSD": 1.2209480799999999,
+      "monthlyUSD": 891.2920983999999,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.00433613,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.76921526,
+          "discountPct": 0.3699852822570473
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5494291,
+          "discountPct": 0.5499979818961671
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c3-standard-44",
+      "provider": "gcp",
+      "instanceName": "c3-standard-44",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 44,
+      "ramGiB": 176,
+      "onDemandHourlyUSD": 2.4418961599999998,
+      "monthlyUSD": 1782.5841967999997,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.00433613,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.53843052,
+          "discountPct": 0.3699852822570473
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.0988582,
+          "discountPct": 0.5499979818961671
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c4-standard-2",
+      "provider": "gcp",
+      "instanceName": "c4-standard-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 7.75,
+      "onDemandHourlyUSD": 0.10991126300000001,
+      "monthlyUSD": 80.23522199000001,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.004336132,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.06924569475,
+          "discountPct": 0.36998545135451677
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.049460304749999996,
+          "discountPct": 0.5499978491740196
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c4-standard-4",
+      "provider": "gcp",
+      "instanceName": "c4-standard-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 15.5,
+      "onDemandHourlyUSD": 0.21982252600000002,
+      "monthlyUSD": 160.47044398000003,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.004336132,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1384913895,
+          "discountPct": 0.36998545135451677
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.09892060949999999,
+          "discountPct": 0.5499978491740196
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c4-standard-8",
+      "provider": "gcp",
+      "instanceName": "c4-standard-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 31,
+      "onDemandHourlyUSD": 0.43964505200000004,
+      "monthlyUSD": 320.94088796000005,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.004336132,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.276982779,
+          "discountPct": 0.36998545135451677
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.19784121899999998,
+          "discountPct": 0.5499978491740196
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:c4-standard-16",
+      "provider": "gcp",
+      "instanceName": "c4-standard-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 62,
+      "onDemandHourlyUSD": 0.8792901040000001,
+      "monthlyUSD": 641.8817759200001,
+      "perVcpuHourUSD": 0.03815312,
+      "perGbHourUSD": 0.004336132,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.553965558,
+          "discountPct": 0.36998545135451677
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.39568243799999997,
+          "discountPct": 0.5499978491740196
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n4-standard-2",
+      "provider": "gcp",
+      "instanceName": "n4-standard-2",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.099869772,
+      "monthlyUSD": 72.90493356,
+      "perVcpuHourUSD": 0.03434331,
+      "perGbHourUSD": 0.003897894,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.06291686399999999,
+          "discountPct": 0.37001093784413575
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.044942496,
+          "discountPct": 0.5499889996744961
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n4-standard-4",
+      "provider": "gcp",
+      "instanceName": "n4-standard-4",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.199739544,
+      "monthlyUSD": 145.80986712,
+      "perVcpuHourUSD": 0.03434331,
+      "perGbHourUSD": 0.003897894,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.12583372799999998,
+          "discountPct": 0.37001093784413575
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.089884992,
+          "discountPct": 0.5499889996744961
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n4-standard-8",
+      "provider": "gcp",
+      "instanceName": "n4-standard-8",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.399479088,
+      "monthlyUSD": 291.61973424,
+      "perVcpuHourUSD": 0.03434331,
+      "perGbHourUSD": 0.003897894,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.25166745599999996,
+          "discountPct": 0.37001093784413575
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.179769984,
+          "discountPct": 0.5499889996744961
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "gcp:europe-north1:n4-standard-16",
+      "provider": "gcp",
+      "instanceName": "n4-standard-16",
+      "regionCode": "europe-north1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.798958176,
+      "monthlyUSD": 583.23946848,
+      "perVcpuHourUSD": 0.03434331,
+      "perGbHourUSD": 0.003897894,
+      "commitments": [
+        {
+          "term": "1yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5033349119999999,
+          "discountPct": 0.37001093784413575
+        },
+        {
+          "term": "3yr",
+          "model": "cud-resource",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.359539968,
+          "discountPct": 0.5499889996744961
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://cloudbilling.googleapis.com/v1/services/6F81-5844-456A/skus?key=***&pageSize=5000",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_E32s_v5",
+      "provider": "azure",
+      "instanceName": "E32s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 256,
+      "onDemandHourlyUSD": 2.256,
+      "monthlyUSD": 1646.8799999999999,
+      "perVcpuHourUSD": 0.052875,
+      "perGbHourUSD": 0.002203125,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.0677648,
+          "discountPct": 0.5267
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.5255072,
+          "discountPct": 0.32379999999999987
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_F8s_v2",
+      "provider": "azure",
+      "instanceName": "F8s_v2",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.384,
+      "monthlyUSD": 280.32,
+      "perVcpuHourUSD": 0.036000000000000004,
+      "perGbHourUSD": 0.006,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1919232,
+          "discountPct": 0.5002
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.2838912,
+          "discountPct": 0.26070000000000004
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D4s_v5",
+      "provider": "azure",
+      "instanceName": "D4s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.214,
+      "monthlyUSD": 156.22,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1108948,
+          "discountPct": 0.4818
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1612704,
+          "discountPct": 0.24639999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B1ms",
+      "provider": "azure",
+      "instanceName": "B1ms",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 1,
+      "ramGiB": 2,
+      "onDemandHourlyUSD": 0.0227,
+      "monthlyUSD": 16.571,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.012485,
+          "discountPct": 0.45000000000000007
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.017252,
+          "discountPct": 0.2400000000000001
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_E4s_v5",
+      "provider": "azure",
+      "instanceName": "E4s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.282,
+      "monthlyUSD": 205.85999999999999,
+      "perVcpuHourUSD": 0.052875,
+      "perGbHourUSD": 0.002203125,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1334706,
+          "discountPct": 0.5267
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1906884,
+          "discountPct": 0.32379999999999987
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D32s_v5",
+      "provider": "azure",
+      "instanceName": "D32s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 1.712,
+      "monthlyUSD": 1249.76,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.8871584,
+          "discountPct": 0.4818
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.2901632,
+          "discountPct": 0.24639999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B4ms",
+      "provider": "azure",
+      "instanceName": "B4ms",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.182,
+      "monthlyUSD": 132.85999999999999,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1001,
+          "discountPct": 0.45000000000000007
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.13832,
+          "discountPct": 0.24
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D2s_v5",
+      "provider": "azure",
+      "instanceName": "D2s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.107,
+      "monthlyUSD": 78.11,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0554474,
+          "discountPct": 0.4818
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0806352,
+          "discountPct": 0.24639999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D16s_v5",
+      "provider": "azure",
+      "instanceName": "D16s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.856,
+      "monthlyUSD": 624.88,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.4435792,
+          "discountPct": 0.4818
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.6450816,
+          "discountPct": 0.24639999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_F2s_v2",
+      "provider": "azure",
+      "instanceName": "F2s_v2",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.096,
+      "monthlyUSD": 70.08,
+      "perVcpuHourUSD": 0.036000000000000004,
+      "perGbHourUSD": 0.006,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0479808,
+          "discountPct": 0.5002
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0709728,
+          "discountPct": 0.26070000000000004
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_F4s_v2",
+      "provider": "azure",
+      "instanceName": "F4s_v2",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.192,
+      "monthlyUSD": 140.16,
+      "perVcpuHourUSD": 0.036000000000000004,
+      "perGbHourUSD": 0.006,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0959616,
+          "discountPct": 0.5002
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1419456,
+          "discountPct": 0.26070000000000004
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B2ms",
+      "provider": "azure",
+      "instanceName": "B2ms",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.091,
+      "monthlyUSD": 66.42999999999999,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.05005,
+          "discountPct": 0.45000000000000007
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.06916,
+          "discountPct": 0.24
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D8s_v5",
+      "provider": "azure",
+      "instanceName": "D8s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.428,
+      "monthlyUSD": 312.44,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.2217896,
+          "discountPct": 0.4818
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.3225408,
+          "discountPct": 0.24639999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D2ps_v5",
+      "provider": "azure",
+      "instanceName": "D2ps_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.086,
+      "monthlyUSD": 62.779999999999994,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.040807,
+          "discountPct": 0.5254999999999999
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0606472,
+          "discountPct": 0.29479999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_E16s_v5",
+      "provider": "azure",
+      "instanceName": "E16s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 1.128,
+      "monthlyUSD": 823.4399999999999,
+      "perVcpuHourUSD": 0.052875,
+      "perGbHourUSD": 0.002203125,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5338824,
+          "discountPct": 0.5267
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.7627536,
+          "discountPct": 0.32379999999999987
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_E8s_v5",
+      "provider": "azure",
+      "instanceName": "E8s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.564,
+      "monthlyUSD": 411.71999999999997,
+      "perVcpuHourUSD": 0.052875,
+      "perGbHourUSD": 0.002203125,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.2669412,
+          "discountPct": 0.5267
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.3813768,
+          "discountPct": 0.32379999999999987
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B2s",
+      "provider": "azure",
+      "instanceName": "B2s",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.045,
+      "monthlyUSD": 32.85,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.02475,
+          "discountPct": 0.44999999999999996
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0342,
+          "discountPct": 0.24
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_E2s_v5",
+      "provider": "azure",
+      "instanceName": "E2s_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "memory",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.141,
+      "monthlyUSD": 102.92999999999999,
+      "perVcpuHourUSD": 0.052875,
+      "perGbHourUSD": 0.002203125,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0667353,
+          "discountPct": 0.5267
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.0953442,
+          "discountPct": 0.32379999999999987
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_F32s_v2",
+      "provider": "azure",
+      "instanceName": "F32s_v2",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 1.536,
+      "monthlyUSD": 1121.28,
+      "perVcpuHourUSD": 0.036000000000000004,
+      "perGbHourUSD": 0.006,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.7676928,
+          "discountPct": 0.5002
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 1.1355648,
+          "discountPct": 0.26070000000000004
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D16ps_v5",
+      "provider": "azure",
+      "instanceName": "D16ps_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.688,
+      "monthlyUSD": 502.23999999999995,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.326456,
+          "discountPct": 0.5254999999999999
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.4851776,
+          "discountPct": 0.29479999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B8ms",
+      "provider": "azure",
+      "instanceName": "B8ms",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.364,
+      "monthlyUSD": 265.71999999999997,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.2002,
+          "discountPct": 0.45000000000000007
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.27664,
+          "discountPct": 0.24
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_B1s",
+      "provider": "azure",
+      "instanceName": "B1s",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "burstable",
+      "arch": "x86_64",
+      "vcpu": 1,
+      "ramGiB": 1,
+      "onDemandHourlyUSD": 0.0113,
+      "monthlyUSD": 8.248999999999999,
+      "perVcpuHourUSD": 0.02983333333333333,
+      "perGbHourUSD": 0.0028412698412698407,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.006215,
+          "discountPct": 0.44999999999999996
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.008588,
+          "discountPct": 0.24
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D8ps_v5",
+      "provider": "azure",
+      "instanceName": "D8ps_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.344,
+      "monthlyUSD": 251.11999999999998,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.163228,
+          "discountPct": 0.5254999999999999
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.2425888,
+          "discountPct": 0.29479999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_D4ps_v5",
+      "provider": "azure",
+      "instanceName": "D4ps_v5",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.172,
+      "monthlyUSD": 125.55999999999999,
+      "perVcpuHourUSD": 0.0375570652173913,
+      "perGbHourUSD": 0.003129755434782608,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.081614,
+          "discountPct": 0.5254999999999999
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.1212944,
+          "discountPct": 0.29479999999999995
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "azure:northeurope:Standard_F16s_v2",
+      "provider": "azure",
+      "instanceName": "F16s_v2",
+      "regionCode": "northeurope",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.768,
+      "monthlyUSD": 560.64,
+      "perVcpuHourUSD": 0.036000000000000004,
+      "perGbHourUSD": 0.006,
+      "commitments": [
+        {
+          "term": "3yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.3838464,
+          "discountPct": 0.5002
+        },
+        {
+          "term": "1yr",
+          "model": "savings-plan",
+          "upfront": "none",
+          "effectiveHourlyUSD": 0.5677824,
+          "discountPct": 0.26070000000000004
+        }
+      ],
+      "source": {
+        "method": "api",
+        "url": "https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName%20eq%20'Virtual%20Machines'%20and%20armRegionName%20eq%20'northeurope'%20and%20priceType%20eq%20'Consumption'&currencyCode='USD'",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "proxy"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx11",
+      "provider": "hetzner",
+      "instanceName": "CPX11",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 2,
+      "onDemandHourlyUSD": 0.01022032,
+      "monthlyUSD": 6.376086,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx21",
+      "provider": "hetzner",
+      "instanceName": "CPX21",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 3,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.01765328,
+      "monthlyUSD": 11.021686,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx31",
+      "provider": "hetzner",
+      "instanceName": "CPX31",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.0325192,
+      "monthlyUSD": 20.312886,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx41",
+      "provider": "hetzner",
+      "instanceName": "CPX41",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.06050894,
+      "monthlyUSD": 37.733886000000005,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx51",
+      "provider": "hetzner",
+      "instanceName": "CPX51",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.13216732,
+      "monthlyUSD": 82.447786,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cax11",
+      "provider": "hetzner",
+      "instanceName": "CAX11",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 2,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.00836208,
+      "monthlyUSD": 5.214686,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cax21",
+      "provider": "hetzner",
+      "instanceName": "CAX21",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 4,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.014865920000000001,
+      "monthlyUSD": 9.279586,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cax31",
+      "provider": "hetzner",
+      "instanceName": "CAX31",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 8,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.029731840000000002,
+      "monthlyUSD": 18.570786000000002,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cax41",
+      "provider": "hetzner",
+      "instanceName": "CAX41",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "arm64",
+      "vcpu": 16,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.0586507,
+      "monthlyUSD": 36.572486,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx13",
+      "provider": "hetzner",
+      "instanceName": "CCX13",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.029731840000000002,
+      "monthlyUSD": 18.570786000000002,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx23",
+      "provider": "hetzner",
+      "instanceName": "CCX23",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.0586507,
+      "monthlyUSD": 36.572486,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx33",
+      "provider": "hetzner",
+      "instanceName": "CCX33",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.11625614,
+      "monthlyUSD": 72.575886,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx43",
+      "provider": "hetzner",
+      "instanceName": "CCX43",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 64,
+      "onDemandHourlyUSD": 0.23262842,
+      "monthlyUSD": 145.163386,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx53",
+      "provider": "hetzner",
+      "instanceName": "CCX53",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 32,
+      "ramGiB": 128,
+      "onDemandHourlyUSD": 0.46525684,
+      "monthlyUSD": 290.338386,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:ccx63",
+      "provider": "hetzner",
+      "instanceName": "CCX63",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "compute",
+      "arch": "x86_64",
+      "vcpu": 48,
+      "ramGiB": 192,
+      "onDemandHourlyUSD": 0.69695614,
+      "monthlyUSD": 434.932686,
+      "perVcpuHourUSD": 0.010905545999999999,
+      "perGbHourUSD": 0.0009087955,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx22",
+      "provider": "hetzner",
+      "instanceName": "CPX22",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.014865920000000001,
+      "monthlyUSD": 9.279586,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx32",
+      "provider": "hetzner",
+      "instanceName": "CPX32",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.026015359999999998,
+      "monthlyUSD": 16.247986,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx42",
+      "provider": "hetzner",
+      "instanceName": "CPX42",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.04738512,
+      "monthlyUSD": 29.604086,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx52",
+      "provider": "hetzner",
+      "instanceName": "CPX52",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 12,
+      "ramGiB": 24,
+      "onDemandHourlyUSD": 0.0679419,
+      "monthlyUSD": 42.379486,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cpx62",
+      "provider": "hetzner",
+      "instanceName": "CPX62",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.09395726,
+      "monthlyUSD": 58.639086,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cx23",
+      "provider": "hetzner",
+      "instanceName": "CX23",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 2,
+      "ramGiB": 4,
+      "onDemandHourlyUSD": 0.007432960000000001,
+      "monthlyUSD": 4.633986,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cx33",
+      "provider": "hetzner",
+      "instanceName": "CX33",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 4,
+      "ramGiB": 8,
+      "onDemandHourlyUSD": 0.012078559999999999,
+      "monthlyUSD": 7.537486,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cx43",
+      "provider": "hetzner",
+      "instanceName": "CX43",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 8,
+      "ramGiB": 16,
+      "onDemandHourlyUSD": 0.022298879999999997,
+      "monthlyUSD": 13.925186,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    },
+    {
+      "id": "hetzner:hel1:cx53",
+      "provider": "hetzner",
+      "instanceName": "CX53",
+      "regionCode": "hel1",
+      "regionLabel": "Helsinki",
+      "family": "general",
+      "arch": "x86_64",
+      "vcpu": 16,
+      "ramGiB": 32,
+      "onDemandHourlyUSD": 0.0418104,
+      "monthlyUSD": 26.119885999999997,
+      "perVcpuHourUSD": 0.003880366444444445,
+      "perGbHourUSD": 0.0006564529699248121,
+      "commitments": [],
+      "source": {
+        "method": "api",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1614)",
+        "fetchedAt": "2026-06-04T08:29:04.419Z",
+        "confidence": "confirmed"
+      }
+    }
+  ]
+}

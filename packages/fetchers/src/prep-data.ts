@@ -2,7 +2,7 @@
 // Copies per-region snapshots into the web app's public/data and writes the
 // region index (public/data/regions.json) the selector reads. Run before
 // `vite dev` / `vite build` so the static site has its data bundled.
-import { mkdir, readdir, copyFile } from "node:fs/promises";
+import { mkdir, readdir, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -43,7 +43,9 @@ async function main() {
   let copied = 0;
   for (const r of index) {
     if (r.hasData) {
-      await copyFile(join(DATA, `${r.key}.json`), join(OUT, `${r.key}.json`));
+      // Minify into the web bundle (smaller Pages payload + faster load).
+      const snap = await readFile(join(DATA, `${r.key}.json`), "utf8");
+      await Bun.write(join(OUT, `${r.key}.json`), JSON.stringify(JSON.parse(snap)));
       copied++;
     }
   }
