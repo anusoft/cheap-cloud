@@ -1,0 +1,418 @@
+[
+  {
+    "code": "ca-central-1",
+    "label": "ca-central-1"
+  },
+  {
+    "code": "sa-east-1",
+    "label": "sa-east-1"
+  },
+  {
+    "code": "ap-south-1",
+    "label": "ap-south-1"
+  },
+  {
+    "code": "us-east-1-iah-1",
+    "label": "us-east-1-iah-1"
+  },
+  {
+    "code": "us-east-2",
+    "label": "us-east-2"
+  },
+  {
+    "code": "us-east-1",
+    "label": "us-east-1"
+  },
+  {
+    "code": "eu-central-1",
+    "label": "eu-central-1"
+  },
+  {
+    "code": "ap-northeast-1",
+    "label": "ap-northeast-1"
+  },
+  {
+    "code": "ap-south-2",
+    "label": "ap-south-2"
+  },
+  {
+    "code": "ap-southeast-6",
+    "label": "ap-southeast-6"
+  },
+  {
+    "code": "eu-west-3",
+    "label": "eu-west-3"
+  },
+  {
+    "code": "af-south-1",
+    "label": "af-south-1"
+  },
+  {
+    "code": "eu-south-2",
+    "label": "eu-south-2"
+  },
+  {
+    "code": "ap-southeast-2",
+    "label": "ap-southeast-2"
+  },
+  {
+    "code": "ap-southeast-1",
+    "label": "ap-southeast-1"
+  },
+  {
+    "code": "eu-north-1",
+    "label": "eu-north-1"
+  },
+  {
+    "code": "us-west-2",
+    "label": "us-west-2"
+  },
+  {
+    "code": "ap-southeast-4",
+    "label": "ap-southeast-4"
+  },
+  {
+    "code": "us-gov-east-1",
+    "label": "us-gov-east-1"
+  },
+  {
+    "code": "ap-southeast-7",
+    "label": "ap-southeast-7"
+  },
+  {
+    "code": "ca-central-1-wl1-yto1",
+    "label": "ca-central-1-wl1-yto1"
+  },
+  {
+    "code": "eu-west-1",
+    "label": "eu-west-1"
+  },
+  {
+    "code": "us-gov-west-1",
+    "label": "us-gov-west-1"
+  },
+  {
+    "code": "ap-east-1",
+    "label": "ap-east-1"
+  },
+  {
+    "code": "us-west-1",
+    "label": "us-west-1"
+  },
+  {
+    "code": "mx-central-1",
+    "label": "mx-central-1"
+  },
+  {
+    "code": "ap-southeast-1-mnl-1",
+    "label": "ap-southeast-1-mnl-1"
+  },
+  {
+    "code": "eu-central-2",
+    "label": "eu-central-2"
+  },
+  {
+    "code": "us-west-2-hnl-1",
+    "label": "us-west-2-hnl-1"
+  },
+  {
+    "code": "eu-north-1-cph-1",
+    "label": "eu-north-1-cph-1"
+  },
+  {
+    "code": "ap-south-1-del-1",
+    "label": "ap-south-1-del-1"
+  },
+  {
+    "code": "us-east-1-bue-1",
+    "label": "us-east-1-bue-1"
+  },
+  {
+    "code": "eu-west-2",
+    "label": "eu-west-2"
+  },
+  {
+    "code": "ap-northeast-3",
+    "label": "ap-northeast-3"
+  },
+  {
+    "code": "us-east-1-scl-1",
+    "label": "us-east-1-scl-1"
+  },
+  {
+    "code": "eu-south-1",
+    "label": "eu-south-1"
+  },
+  {
+    "code": "ap-southeast-3",
+    "label": "ap-southeast-3"
+  },
+  {
+    "code": "ap-northeast-2",
+    "label": "ap-northeast-2"
+  },
+  {
+    "code": "us-east-1-nyc-1",
+    "label": "us-east-1-nyc-1"
+  },
+  {
+    "code": "ca-west-1",
+    "label": "ca-west-1"
+  },
+  {
+    "code": "us-west-2-pdx-1",
+    "label": "us-west-2-pdx-1"
+  },
+  {
+    "code": "ap-east-2",
+    "label": "ap-east-2"
+  },
+  {
+    "code": "ap-southeast-5",
+    "label": "ap-southeast-5"
+  },
+  {
+    "code": "us-west-2-phx-1",
+    "label": "us-west-2-phx-1"
+  },
+  {
+    "code": "il-central-1",
+    "label": "il-central-1"
+  },
+  {
+    "code": "me-central-1",
+    "label": "me-central-1"
+  },
+  {
+    "code": "us-west-2-las-1",
+    "label": "us-west-2-las-1"
+  },
+  {
+    "code": "eu-central-1-wl1-dtm1",
+    "label": "eu-central-1-wl1-dtm1"
+  },
+  {
+    "code": "me-south-1",
+    "label": "me-south-1"
+  },
+  {
+    "code": "eu-central-1-ist-1",
+    "label": "eu-central-1-ist-1"
+  },
+  {
+    "code": "us-east-1-chi-1",
+    "label": "us-east-1-chi-1"
+  },
+  {
+    "code": "us-east-1-wl1",
+    "label": "us-east-1-wl1"
+  },
+  {
+    "code": "us-east-1-mia-1",
+    "label": "us-east-1-mia-1"
+  },
+  {
+    "code": "eu-central-1-ham-1",
+    "label": "eu-central-1-ham-1"
+  },
+  {
+    "code": "us-west-2-lax-1",
+    "label": "us-west-2-lax-1"
+  },
+  {
+    "code": "me-south-1-mct-1",
+    "label": "me-south-1-mct-1"
+  },
+  {
+    "code": "us-east-1-dfw-1",
+    "label": "us-east-1-dfw-1"
+  },
+  {
+    "code": "af-south-1-los-1",
+    "label": "af-south-1-los-1"
+  },
+  {
+    "code": "us-west-2-wl1-den1",
+    "label": "us-west-2-wl1-den1"
+  },
+  {
+    "code": "ap-southeast-2-per-1",
+    "label": "ap-southeast-2-per-1"
+  },
+  {
+    "code": "ap-southeast-2-akl-1",
+    "label": "ap-southeast-2-akl-1"
+  },
+  {
+    "code": "us-east-1-bos-1",
+    "label": "us-east-1-bos-1"
+  },
+  {
+    "code": "eu-central-1-wl1-muc1",
+    "label": "eu-central-1-wl1-muc1"
+  },
+  {
+    "code": "us-east-1-wl1-bna1",
+    "label": "us-east-1-wl1-bna1"
+  },
+  {
+    "code": "us-east-1-wl1-was1",
+    "label": "us-east-1-wl1-was1"
+  },
+  {
+    "code": "us-east-1-wl1-foe1",
+    "label": "us-east-1-wl1-foe1"
+  },
+  {
+    "code": "eu-west-3-wl1-cmn1",
+    "label": "eu-west-3-wl1-cmn1"
+  },
+  {
+    "code": "us-east-1-phl-1",
+    "label": "us-east-1-phl-1"
+  },
+  {
+    "code": "us-east-1-wl1-clt1",
+    "label": "us-east-1-wl1-clt1"
+  },
+  {
+    "code": "us-east-1-mci-1",
+    "label": "us-east-1-mci-1"
+  },
+  {
+    "code": "eu-central-1-waw-1",
+    "label": "eu-central-1-waw-1"
+  },
+  {
+    "code": "us-west-2-wl1-phx1",
+    "label": "us-west-2-wl1-phx1"
+  },
+  {
+    "code": "us-east-1-atl-1",
+    "label": "us-east-1-atl-1"
+  },
+  {
+    "code": "us-west-2-den-1",
+    "label": "us-west-2-den-1"
+  },
+  {
+    "code": "ap-northeast-1-tpe-1",
+    "label": "ap-northeast-1-tpe-1"
+  },
+  {
+    "code": "eu-west-2-wl1-lon1",
+    "label": "eu-west-2-wl1-lon1"
+  },
+  {
+    "code": "eu-north-1-hel-1",
+    "label": "eu-north-1-hel-1"
+  },
+  {
+    "code": "us-west-2-wl1",
+    "label": "us-west-2-wl1"
+  },
+  {
+    "code": "us-west-2-wl1-lax1",
+    "label": "us-west-2-wl1-lax1"
+  },
+  {
+    "code": "us-east-1-qro-1",
+    "label": "us-east-1-qro-1"
+  },
+  {
+    "code": "us-east-1-wl1-nyc1",
+    "label": "us-east-1-wl1-nyc1"
+  },
+  {
+    "code": "ap-south-1-ccu-1",
+    "label": "ap-south-1-ccu-1"
+  },
+  {
+    "code": "us-east-1-lim-1",
+    "label": "us-east-1-lim-1"
+  },
+  {
+    "code": "us-west-2-sea-1",
+    "label": "us-west-2-sea-1"
+  },
+  {
+    "code": "us-east-1-wl1-tpa1",
+    "label": "us-east-1-wl1-tpa1"
+  },
+  {
+    "code": "ap-southeast-1-bkk-1",
+    "label": "ap-southeast-1-bkk-1"
+  },
+  {
+    "code": "us-west-2-wl1-las1",
+    "label": "us-west-2-wl1-las1"
+  },
+  {
+    "code": "ap-northeast-2-wl1-sel1",
+    "label": "ap-northeast-2-wl1-sel1"
+  },
+  {
+    "code": "ap-northeast-2-wl1-cjj1",
+    "label": "ap-northeast-2-wl1-cjj1"
+  },
+  {
+    "code": "us-east-1-wl1-dfw1",
+    "label": "us-east-1-wl1-dfw1"
+  },
+  {
+    "code": "eu-west-3-wl1-dss1",
+    "label": "eu-west-3-wl1-dss1"
+  },
+  {
+    "code": "us-east-1-msp-1",
+    "label": "us-east-1-msp-1"
+  },
+  {
+    "code": "us-east-1-wl1-dtw1",
+    "label": "us-east-1-wl1-dtw1"
+  },
+  {
+    "code": "eu-west-2-wl2-man1",
+    "label": "eu-west-2-wl2-man1"
+  },
+  {
+    "code": "us-west-2-wl1-sea1",
+    "label": "us-west-2-wl1-sea1"
+  },
+  {
+    "code": "eu-west-2-wl1-man1",
+    "label": "eu-west-2-wl1-man1"
+  },
+  {
+    "code": "us-east-1-wl1-chi1",
+    "label": "us-east-1-wl1-chi1"
+  },
+  {
+    "code": "us-east-1-wl1-mia1",
+    "label": "us-east-1-wl1-mia1"
+  },
+  {
+    "code": "us-east-1-wl1-iah1",
+    "label": "us-east-1-wl1-iah1"
+  },
+  {
+    "code": "us-east-1-wl1-msp1",
+    "label": "us-east-1-wl1-msp1"
+  },
+  {
+    "code": "us-east-1-wl1-atl1",
+    "label": "us-east-1-wl1-atl1"
+  },
+  {
+    "code": "ap-northeast-1-wl1-kix1",
+    "label": "ap-northeast-1-wl1-kix1"
+  },
+  {
+    "code": "ap-northeast-1-wl1-nrt1",
+    "label": "ap-northeast-1-wl1-nrt1"
+  },
+  {
+    "code": "eu-central-1-wl1-ber1",
+    "label": "eu-central-1-wl1-ber1"
+  }
+]

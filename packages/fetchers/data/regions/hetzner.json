@@ -1,0 +1,32 @@
+[
+  {
+    "code": "fsn1",
+    "city": "Falkenstein",
+    "country": "DE"
+  },
+  {
+    "code": "nbg1",
+    "city": "Nuremberg",
+    "country": "DE"
+  },
+  {
+    "code": "hel1",
+    "city": "Helsinki",
+    "country": "FI"
+  },
+  {
+    "code": "ash",
+    "city": "Ashburn, VA",
+    "country": "US"
+  },
+  {
+    "code": "hil",
+    "city": "Hillsboro, OR",
+    "country": "US"
+  },
+  {
+    "code": "sin",
+    "city": "Singapore",
+    "country": "SG"
+  }
+]

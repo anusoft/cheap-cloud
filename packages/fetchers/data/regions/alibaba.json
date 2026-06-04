@@ -1,0 +1,130 @@
+[
+  {
+    "code": "cn-qingdao",
+    "label": "China (Qingdao)"
+  },
+  {
+    "code": "cn-beijing",
+    "label": "China (Beijing)"
+  },
+  {
+    "code": "cn-zhangjiakou",
+    "label": "China (Zhangjiakou)"
+  },
+  {
+    "code": "cn-huhehaote",
+    "label": "China (Hohhot)"
+  },
+  {
+    "code": "cn-wulanchabu",
+    "label": "China (Ulanqab)"
+  },
+  {
+    "code": "cn-hangzhou",
+    "label": "China (Hangzhou)"
+  },
+  {
+    "code": "cn-shanghai",
+    "label": "China (Shanghai)"
+  },
+  {
+    "code": "cn-nanjing",
+    "label": "China (Nanjing - Local Region) Closing Down"
+  },
+  {
+    "code": "cn-shenzhen",
+    "label": "China (Shenzhen)"
+  },
+  {
+    "code": "cn-heyuan",
+    "label": "China (Heyuan)"
+  },
+  {
+    "code": "cn-guangzhou",
+    "label": "China (Guangzhou)"
+  },
+  {
+    "code": "cn-fuzhou",
+    "label": "China (Fuzhou - Local Region) Closing Down"
+  },
+  {
+    "code": "cn-wuhan-lr",
+    "label": "China (Wuhan - Local Region)"
+  },
+  {
+    "code": "cn-zhongwei",
+    "label": "China (Zhongwei)"
+  },
+  {
+    "code": "cn-chengdu",
+    "label": "China (Chengdu)"
+  },
+  {
+    "code": "cn-hongkong",
+    "label": "China (Hong Kong)"
+  },
+  {
+    "code": "ap-northeast-1",
+    "label": "Japan (Tokyo)"
+  },
+  {
+    "code": "ap-northeast-2",
+    "label": "South Korea (Seoul)"
+  },
+  {
+    "code": "ap-southeast-1",
+    "label": "Singapore"
+  },
+  {
+    "code": "ap-southeast-8",
+    "label": "Malaysia (Johor)"
+  },
+  {
+    "code": "ap-southeast-3",
+    "label": "Malaysia (Kuala Lumpur)"
+  },
+  {
+    "code": "ap-southeast-6",
+    "label": "Philippines (Manila)"
+  },
+  {
+    "code": "ap-southeast-5",
+    "label": "Indonesia (Jakarta)"
+  },
+  {
+    "code": "ap-southeast-7",
+    "label": "Thailand (Bangkok)"
+  },
+  {
+    "code": "us-east-1",
+    "label": "US (Virginia)"
+  },
+  {
+    "code": "us-west-1",
+    "label": "US (Silicon Valley)"
+  },
+  {
+    "code": "na-south-1",
+    "label": "Mexico"
+  },
+  {
+    "code": "eu-west-1",
+    "label": "UK (London)"
+  },
+  {
+    "code": "eu-west-2",
+    "label": "France‌(Paris)"
+  },
+  {
+    "code": "me-east-1",
+    "label": "UAE (Dubai)"
+  },
+  {
+    "code": "me-central-1",
+    "label": "SAU (Riyadh)"
+  },
+  {
+    "code": "eu-central-1",
+    "label": "Germany (Frankfurt)"
+  }
+]

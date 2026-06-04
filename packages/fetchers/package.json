@@ -1,0 +1,18 @@
+{
+  "name": "@cheap-cloud/fetchers",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "fetch": "bun run src/cli.ts",
+    "prep-data": "bun run src/prep-data.ts",
+    "regions:download": "bun run src/regions-download.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cheap-cloud/schema": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

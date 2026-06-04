@@ -1,0 +1,3 @@
+# Bun workspace configuration. Default hoisted linker works best with TanStack/Vite.
+[install]
+exact = false

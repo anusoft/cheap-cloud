@@ -1,0 +1,19 @@
+{
+  "name": "cheap-cloud",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "fetch": "bun run --cwd packages/fetchers fetch",
+    "dev": "bun run --cwd apps/web dev",
+    "build": "bun run --cwd apps/web build",
+    "typecheck": "bun run --cwd packages/schema typecheck && bun run --cwd packages/fetchers typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  }
+}

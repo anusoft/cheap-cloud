@@ -1,0 +1,74 @@
+[
+  {
+    "code": "ap-shanghai",
+    "label": "华东地区(上海)"
+  },
+  {
+    "code": "ap-nanjing",
+    "label": "华东地区(南京)"
+  },
+  {
+    "code": "ap-guangzhou",
+    "label": "华南地区(广州)"
+  },
+  {
+    "code": "ap-beijing",
+    "label": "华北地区(北京)"
+  },
+  {
+    "code": "ap-chengdu",
+    "label": "西南地区(成都)"
+  },
+  {
+    "code": "ap-chongqing",
+    "label": "西南地区(重庆)"
+  },
+  {
+    "code": "ap-hongkong",
+    "label": "港澳台地区(中国香港)"
+  },
+  {
+    "code": "ap-osaka",
+    "label": "亚太东北(大阪)"
+  },
+  {
+    "code": "ap-seoul",
+    "label": "亚太东北(首尔)"
+  },
+  {
+    "code": "ap-tokyo",
+    "label": "亚太东北(东京)"
+  },
+  {
+    "code": "ap-singapore",
+    "label": "亚太东南(新加坡)"
+  },
+  {
+    "code": "ap-bangkok",
+    "label": "亚太东南(曼谷)"
+  },
+  {
+    "code": "ap-jakarta",
+    "label": "亚太东南(雅加达)"
+  },
+  {
+    "code": "na-siliconvalley",
+    "label": "美国西部(硅谷)"
+  },
+  {
+    "code": "eu-frankfurt",
+    "label": "欧洲地区(法兰克福)"
+  },
+  {
+    "code": "na-ashburn",
+    "label": "美国东部(弗吉尼亚)"
+  },
+  {
+    "code": "sa-saopaulo",
+    "label": "南美地区(圣保罗)"
+  },
+  {
+    "code": "me-saudi-arabia",
+    "label": "中东地区(利雅得)"
+  }
+]
