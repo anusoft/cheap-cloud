@@ -108,6 +108,37 @@ table.grid { border-collapse: collapse; table-layout: fixed; }
 
 .empty { padding: 40px; color: var(--muted); }
 
+/* ── nav + analysis page ────────────────────────────────────────────── */
+.nav-link { color: var(--accent); text-decoration: none; font-size: 12px; font-weight: 600; white-space: nowrap; padding: 5px 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel-2); }
+.nav-link:hover { border-color: var(--accent); }
+
+.analysis { min-height: 100vh; background: var(--bg); color: var(--text); overflow-y: auto; }
+.analysis-bar { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: #12151d; z-index: 10; }
+.lang-toggle { display: flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.lang-toggle button { padding: 5px 14px; background: var(--panel-2); color: var(--muted); border: none; cursor: pointer; font-size: 12px; font-weight: 600; }
+.lang-toggle button.on { background: var(--accent); color: #fff; }
+.analysis-body { max-width: 880px; margin: 0 auto; padding: 28px 24px 80px; }
+.analysis-body h1 { font-size: 26px; letter-spacing: -0.02em; margin: 8px 0 6px; }
+.lede { font-size: 15px; color: #c3c8d4; margin: 0 0 4px; line-height: 1.5; }
+.analysis-body .small { font-size: 12px; }
+.analysis-section { margin-top: 26px; }
+.analysis-section h2 { font-size: 17px; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+.analysis-section p { line-height: 1.6; margin: 0 0 10px; }
+.analysis-section ul { margin: 0; padding-left: 18px; line-height: 1.6; }
+.analysis-section li { margin-bottom: 7px; }
+.landscape { display: flex; flex-direction: column; gap: 6px; }
+.land-row { display: flex; align-items: center; gap: 12px; }
+.land-row .mono { flex: 1; }
+.tag-ga { color: var(--accent-2); font-size: 11px; font-weight: 600; }
+.tag-proxy { color: #f5a623; font-size: 11px; font-weight: 600; }
+table.bench { border-collapse: collapse; width: 100%; margin-top: 4px; font-size: 13px; }
+table.bench th { text-align: left; color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.03em; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+table.bench td { padding: 7px 10px; border-bottom: 1px solid #20242e; }
+table.bench td.num { text-align: right; font-family: ui-monospace, Menlo, monospace; }
+table.bench td.strong { font-weight: 700; }
+table.bench .conf.proxy { margin-left: 6px; }
+.analysis-foot { margin-top: 34px; }
+
 /* ── chat ───────────────────────────────────────────────────────────── */
 .chat { width: 360px; flex-shrink: 0; border-left: 1px solid var(--line); display: flex; flex-direction: column; background: var(--panel); }
 .chat-head { display: flex; justify-content: space-between; align-items: center; padding: 11px 14px; border-bottom: 1px solid var(--line); font-weight: 600; }
