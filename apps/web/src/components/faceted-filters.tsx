@@ -4,6 +4,7 @@ import {
   type Filters,
   type GroupBy,
   type PriceMode,
+  type Workload,
   PROVIDER_COLORS,
   PROVIDER_LABELS,
 } from "../lib/view";
@@ -32,6 +33,43 @@ function NumInput({ value, onCommit }: { value: number; onCommit: (n: number) =>
   );
 }
 
+// Like NumInput but an empty field commits null ("auto" = use the per-shape
+// Hetzner bundle). Any number overrides every row.
+function NullableNumInput({
+  value,
+  placeholder,
+  onCommit,
+}: {
+  value: number | null;
+  placeholder?: string;
+  onCommit: (n: number | null) => void;
+}) {
+  const [local, setLocal] = useState(value == null ? "" : String(value));
+  useEffect(() => setLocal(value == null ? "" : String(value)), [value]);
+  useEffect(() => {
+    const id = setTimeout(() => {
+      const t = local.trim();
+      if (t === "") {
+        if (value !== null) onCommit(null);
+        return;
+      }
+      const n = Number(t);
+      if (Number.isFinite(n) && n !== value) onCommit(n);
+    }, 250);
+    return () => clearTimeout(id);
+  }, [local]); // eslint-disable-line react-hooks/exhaustive-deps
+  return (
+    <input
+      type="number"
+      min={0}
+      inputMode="numeric"
+      placeholder={placeholder}
+      value={local}
+      onChange={(e) => setLocal(e.target.value)}
+    />
+  );
+}
+
 interface Props {
   all: InstancePrice[];
   filters: Filters;
@@ -40,6 +78,8 @@ interface Props {
   setPriceMode: (m: PriceMode) => void;
   groupBy: GroupBy;
   setGroupBy: (g: GroupBy) => void;
+  workload: Workload;
+  setWorkload: (w: Workload) => void;
   shown: number;
   total: number;
 }
@@ -58,6 +98,8 @@ export function FacetedFilters({
   setPriceMode,
   groupBy,
   setGroupBy,
+  workload,
+  setWorkload,
   shown,
   total,
 }: Props) {
@@ -88,6 +130,8 @@ export function FacetedFilters({
               ["yearly", "$/yr"],
               ["hourly", "$/hr"],
               ["normalized", "$/unit"],
+              ["storage", "Storage"],
+              ["total", "Total"],
             ] as [PriceMode, string][]
           ).map(([m, label]) => (
             <button key={m} className={priceMode === m ? "on" : ""} onClick={() => setPriceMode(m)}>
@@ -95,8 +139,54 @@ export function FacetedFilters({
             </button>
           ))}
         </div>
-        <div className="hint">On-demand · 1yr · 3yr shown as columns</div>
+        <div className="hint">
+          {priceMode === "storage"
+            ? "Storage TCO — each provider's own bundled/boot disk (free on Hetzner)"
+            : priceMode === "total"
+              ? "Compute + storage for the disk below"
+              : "On-demand · 1yr · 3yr shown as columns"}
+        </div>
       </div>
+
+      {(priceMode === "storage" || priceMode === "total") && (
+        <div className="filter-block">
+          <label className="lbl">Storage sizing</label>
+          <label className="chk">
+            <input
+              type="checkbox"
+              checked={workload.matchHetzner}
+              onChange={() =>
+                setWorkload({ ...workload, matchHetzner: !workload.matchHetzner })
+              }
+            />
+            Match Hetzner bundle
+          </label>
+          {workload.matchHetzner ? (
+            <div className="hint">
+              Each shape is priced for the disk a comparable Hetzner box bundles
+              (matched by vCPU/RAM) — free on Hetzner, billed elsewhere.
+            </div>
+          ) : (
+            <>
+              <div className="range-row">
+                <NullableNumInput
+                  value={workload.storageGiB}
+                  placeholder="bundled"
+                  onCommit={(n) => setWorkload({ ...workload, storageGiB: n })}
+                />
+                <span className="hint" style={{ alignSelf: "center" }}>
+                  GB disk
+                </span>
+              </div>
+              <div className="hint">
+                Empty = each provider's own bundled/boot disk (free on Hetzner,
+                billed elsewhere). Enter a value to provision that much on every
+                row. (Bandwidth/egress is excluded from totals.)
+              </div>
+            </>
+          )}
+        </div>
+      )}
 
       <div className="filter-block">
         <label className="lbl">Group by</label>

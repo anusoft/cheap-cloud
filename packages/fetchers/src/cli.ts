@@ -3,13 +3,16 @@ import { mkdir } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  applyBundledReference,
   applyNormalization,
   InstancePrice,
   Snapshot,
   type ProviderId,
+  type ProviderRate,
 } from "@cheap-cloud/schema";
 import { getRegion } from "./regions.ts";
 import { FETCHERS } from "./providers/index.ts";
+import { mergeRate } from "./storage-rates.ts";
 import type { FetchContext } from "./types.ts";
 
 // ── arg parsing: --provider=all|aws,gcp --region=bangkok --out=<dir> ──────────
@@ -80,6 +83,31 @@ async function main() {
     return [parsed.data];
   });
   applyNormalization(validated);
+  // Impute included storage/bandwidth from the nearest Hetzner bundle per shape.
+  applyBundledReference(validated);
+
+  // Per-provider storage/egress rates: a live pull from the fetcher's optional
+  // rates() merged over the committed published baseline, for every provider
+  // that contributed rows. These drive the web app's storage-inclusive totals.
+  const providerRates: ProviderRate[] = [];
+  for (const f of wanted) {
+    if (!contributed.includes(f.id)) continue;
+    const pr = region.providerRegions[f.id];
+    if (!pr) continue;
+    let live: Awaited<ReturnType<NonNullable<typeof f.rates>>> = null;
+    if (f.rates) {
+      try {
+        live = await f.rates({ region, providerRegion: pr, fetchedAt });
+      } catch (e) {
+        console.log(`  ⚠  ${f.label} rates() failed, using published: ${e}`);
+      }
+    }
+    const rate = mergeRate(f.id, live);
+    providerRates.push(rate);
+    console.log(
+      `  ◇  ${f.label.padEnd(14)} storage ${rate.storagePerGbMonthUSD ?? "—"} $/GB-mo · egress ${rate.egressPerGbUSD ?? "—"} $/GB (${rate.rateSource})`,
+    );
+  }
 
   const snapshot: Snapshot = {
     schemaVersion: 1,
@@ -87,6 +115,7 @@ async function main() {
     generatedAt: fetchedAt,
     providers: contributed,
     rows: validated,
+    providerRates,
   };
   Snapshot.parse(snapshot);
 

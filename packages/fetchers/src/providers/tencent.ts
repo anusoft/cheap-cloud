@@ -141,4 +141,34 @@ export const tencentFetcher: ProviderFetcher = {
     }
     return rows;
   },
+  // Live default system-disk size from the CBS DescribeDiskConfigQuota action —
+  // the actual region-specific SYSTEM_DISK recommended size across cloud-disk
+  // types (the CVM config APIs don't expose disk bounds). Overrides the
+  // published bundled size; storage $/GB stays on the published baseline.
+  async rates(ctx: FetchContext) {
+    try {
+      const secretId = process.env.TENCENT_SECRET_ID;
+      const secretKey = process.env.TENCENT_SECRET_KEY;
+      if (!secretId || !secretKey) return null;
+      const r = await tencentRequest<{
+        DiskConfigSet?: { DiskUsage?: string; Available?: boolean; RecommendDiskSize?: number }[];
+      }>({
+        service: "cbs",
+        host: "cbs.tencentcloudapi.com",
+        action: "DescribeDiskConfigQuota",
+        version: "2017-03-12",
+        region: ctx.providerRegion.code,
+        payload: { InquiryType: "INQUIRY_CVM_CONFIG", DiskChargeType: "POSTPAID_BY_HOUR" },
+        secretId,
+        secretKey,
+      });
+      const recs = (r.DiskConfigSet ?? [])
+        .filter((c) => c.DiskUsage === "SYSTEM_DISK" && c.Available && (c.RecommendDiskSize ?? 0) > 0)
+        .map((c) => c.RecommendDiskSize!);
+      if (!recs.length) return null;
+      return { bundledStorageGiB: Math.min(...recs) };
+    } catch {
+      return null; // fall back to published baseline
+    }
+  },
 };

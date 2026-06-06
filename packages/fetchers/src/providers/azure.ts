@@ -110,4 +110,10 @@ export const azureFetcher: ProviderFetcher = {
     }
     return rows;
   },
+  // NOTE: a live egress rate via the Retail Prices `Bandwidth` service was
+  // attempted here, but Azure's modern routing-preference meters report $0 per
+  // region (billing rolls up to Global volume tiers) and the legacy internet
+  // egress meter isn't cleanly region-priced — extracting a trustworthy $/GB is
+  // ambiguous, so Azure egress stays on the labeled published baseline. The
+  // optional rates() hook remains available for a precise future implementation.
 };

@@ -108,13 +108,39 @@ async function resolveRegionFile(regionCode: string): Promise<string> {
   return BASE + entry.currentVersionUrl;
 }
 
+// The per-region offer file is ~100+ MB and contains BOTH compute and EBS
+// pricing, so memoize it per region — fetch() and rates() share one download.
+const offerCache = new Map<string, Promise<{ offer: AwsOffer; url: string }>>();
+function loadOffer(regionCode: string): Promise<{ offer: AwsOffer; url: string }> {
+  let hit = offerCache.get(regionCode);
+  if (!hit) {
+    hit = (async () => {
+      const url = await resolveRegionFile(regionCode);
+      const offer = (await (await fetch(url)).json()) as AwsOffer;
+      return { offer, url };
+    })();
+    offerCache.set(regionCode, hit);
+  }
+  return hit;
+}
+
+/** First positive on-demand price across an offer term's price dimensions. */
+function firstPrice(terms: Record<string, AwsOnDemandTerm> | undefined): number | null {
+  for (const term of Object.values(terms ?? {})) {
+    for (const dim of Object.values(term.priceDimensions ?? {})) {
+      const v = parseFloat(dim.pricePerUnit?.USD ?? "");
+      if (Number.isFinite(v) && v > 0) return v;
+    }
+  }
+  return null;
+}
+
 export const awsFetcher: ProviderFetcher = {
   id: "aws",
   label: "AWS",
   available: () => ({ ok: true }), // public API
   async fetch(ctx: FetchContext): Promise<InstancePrice[]> {
-    const url = await resolveRegionFile(ctx.providerRegion.code);
-    const offer = (await (await fetch(url)).json()) as AwsOffer;
+    const { offer, url } = await loadOffer(ctx.providerRegion.code);
 
     // Index reserved terms by sku for quick join.
     const reservedBySku = offer.terms.Reserved ?? {};
@@ -184,5 +210,28 @@ export const awsFetcher: ProviderFetcher = {
       });
     }
     return rows;
+  },
+  // Live block-storage rate: EBS gp3 ($/GB-month) lives in the SAME offer file
+  // as compute (productFamily "Storage", volumeApiName "gp3"), so this reuses
+  // the memoized download — no second fetch. Egress (Data Transfer) is in a
+  // separate AWSDataTransfer offer, so it stays on the published baseline.
+  async rates(ctx: FetchContext) {
+    try {
+      const { offer, url } = await loadOffer(ctx.providerRegion.code);
+      const gp3 = Object.values(offer.products).find(
+        (p) => p.productFamily === "Storage" && p.attributes?.volumeApiName === "gp3",
+      );
+      if (!gp3) return null;
+      const price = firstPrice(offer.terms.OnDemand?.[gp3.sku]);
+      if (price == null) return null;
+      return {
+        storagePerGbMonthUSD: price,
+        storageClass: "gp3 SSD (EBS)",
+        rateSource: "live" as const,
+        url,
+      };
+    } catch {
+      return null; // fall back to published baseline
+    }
   },
 };

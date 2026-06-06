@@ -95,6 +95,28 @@ rates, so `applyNormalization` (in `@cheap-cloud/schema`) fits
 `price = a·vCPU + b·GiB` by least squares **per (provider, family)** and back-fills
 each row. GCP and Huawei carry native unit rates and are left untouched.
 
-## Out of scope (v1)
-Block storage ($/GB-mo) and network egress ($/GB) are documented in the research
-but not yet fetched; the schema leaves room to add them as sibling datasets.
+## Storage & egress (storage-inclusive totals)
+Block storage ($/GB-mo) and internet egress ($/GB) are modeled as a per-provider
+sibling dataset on the snapshot (`Snapshot.providerRates`), and bundled local
+storage is carried per row (`InstancePrice.bundledStorageGiB`). The web app's
+**Storage** and **Total** views combine these with a user-chosen workload
+(GB of disk + GB/mo egress), crediting each provider's bundled disk and
+free-egress tier before billing.
+
+| Provider | Bundled storage | Block-storage rate | Egress | Source |
+|---|---|---|---|---|
+| AWS | none | gp3 SSD | $0.09/GB (100 GB free) | published baseline |
+| GCP | none | PD balanced | $0.12/GB (200 GB free) | published baseline |
+| Azure | none | Standard SSD | $0.087/GB (100 GB free) | published baseline |
+| Alibaba | none | ESSD PL1 | $0.12/GB | published baseline |
+| Tencent | none | SSD CBS | $0.12/GB | published baseline |
+| Huawei | none | EVS SSD | $0.10/GB | published baseline |
+| Hetzner | **local NVMe (from API)** | Volume SSD | 20 TB/mo free, then ~$1.20/TB | live disk + published rates |
+
+Rates live in `packages/fetchers/src/storage-rates.ts` (the committed published
+baseline, mirrored as a fallback in the web app's `view.ts`). A provider fetcher
+may implement the optional `rates(ctx)` hook to override any subset with a live
+API pull — Hetzner reads its real bundled local disk per row from its API; the
+CLI merges any live partial over the published baseline and writes it into the
+snapshot. Storage rates carry `rateSource: "live" | "published"`, surfaced in
+the UI so the distinction is explicit.

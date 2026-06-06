@@ -15,17 +15,26 @@ import type { InstancePrice } from "@cheap-cloud/schema";
 import {
   type GroupBy,
   type PriceMode,
+  type RateLookup,
   type Term,
+  type Workload,
   PROVIDER_COLORS,
   PROVIDER_LABELS,
+  addonMonthlyUSD,
   commitInUnit,
+  commitTotalInUnit,
   discountFor,
+  effectiveStorageGiB,
+  isStorageFree,
+  fmtGB,
   fmtMoney,
   fmtUSD,
   heatColor,
   perGbInUnit,
   perVcpuInUnit,
   priceInUnit,
+  storageMonthlyUSD,
+  totalInUnit,
   unitSuffix,
   unitWord,
 } from "../lib/view";
@@ -38,28 +47,47 @@ interface Props {
   groupBy: GroupBy;
   pinned: Set<string>;
   onTogglePin: (id: string) => void;
+  rateFor: RateLookup;
+  workload: Workload;
 }
 
-export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin }: Props) {
+export function ComparisonTable({
+  rows,
+  priceMode,
+  groupBy,
+  pinned,
+  onTogglePin,
+  rateFor,
+  workload,
+}: Props) {
   const [sorting, setSorting] = useState<SortingState>([
     { id: "ondemand", desc: false },
   ]);
   const [expanded, setExpanded] = useState<ExpandedState>(true);
   useEffect(() => setExpanded(true), [groupBy]); // expand all when grouping changes
 
-  // Heat-map bounds for the on-demand price across the visible rows.
+  // The headline (sorted + heat-mapped) metric for the current view.
+  const headline = (r: InstancePrice): number | null => {
+    if (priceMode === "normalized") return r.perVcpuHourUSD;
+    if (priceMode === "storage" || priceMode === "total")
+      return totalInUnit(r, rateFor(r.provider), workload, priceMode);
+    return priceInUnit(r, priceMode);
+  };
+
+  // Heat-map bounds for the headline price across the visible rows.
   const bounds = useMemo(() => {
     let min = Infinity;
     let max = -Infinity;
     for (const r of rows) {
-      const v = priceMode === "normalized" ? r.perVcpuHourUSD : priceInUnit(r, priceMode);
+      const v = headline(r);
       if (v != null && Number.isFinite(v)) {
         if (v < min) min = v;
         if (v > max) max = v;
       }
     }
     return { min, max };
-  }, [rows, priceMode]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rows, priceMode, rateFor, workload]);
 
   const columns = useMemo<ColumnDef<InstancePrice>[]>(() => {
     const cols: ColumnDef<InstancePrice>[] = [
@@ -149,6 +177,69 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
           cell: ({ row }) => fmtUSD(row.original.perGbHourUSD, 5),
         },
       );
+    } else if (priceMode === "storage") {
+      // Storage + bandwidth TCO: raw GB priced per row (pre-filled from the
+      // nearest-Hetzner bundle, overridable) and the $/mo each provider charges
+      // for it after crediting its own free allowance, plus the all-in total.
+      cols.push(
+        {
+          id: "storageGiB",
+          header: "Storage (GB)",
+          accessorFn: (r) => effectiveStorageGiB(r, rateFor(r.provider), workload),
+          size: 142,
+          cell: ({ row }) => {
+            const r = row.original;
+            const rate = rateFor(r.provider);
+            const gib = effectiveStorageGiB(r, rate, workload);
+            const free = isStorageFree(r, rate, workload);
+            return (
+              <span title={`${fmtUSD(rate.storagePerGbMonthUSD, 4)}/GB-mo · ${rate.storageClass} · ${gbSource(r, workload)}`}>
+                {fmtGB(gib)}{" "}
+                <span className={free ? "conf ok" : "muted"}>{free ? "free" : "charged"}</span>
+              </span>
+            );
+          },
+        },
+        {
+          id: "storageCost",
+          header: "Storage $/mo",
+          accessorFn: (r) => storageMonthlyUSD(r, rateFor(r.provider), workload),
+          size: 124,
+          cell: ({ row }) => (
+            <span className="unit-cell">
+              {fmtMoney(storageMonthlyUSD(row.original, rateFor(row.original.provider), workload), "monthly")}
+            </span>
+          ),
+        },
+        totalColumn(rateFor, workload, bounds),
+      );
+    } else if (priceMode === "total") {
+      // Compute + storage + egress, all-in, with committed equivalents.
+      cols.push(
+        {
+          id: "compute",
+          header: "Compute $/mo",
+          accessorFn: (r) => priceInUnit(r, "monthly") ?? Infinity,
+          size: 124,
+          cell: ({ row }) => (
+            <span className="unit-cell">{fmtMoney(priceInUnit(row.original, "monthly"), "monthly")}</span>
+          ),
+        },
+        {
+          id: "addon",
+          header: "+ Storage",
+          accessorFn: (r) => addonMonthlyUSD(r, rateFor(r.provider), workload),
+          size: 120,
+          cell: ({ row }) => (
+            <span className="unit-cell">
+              {fmtMoney(addonMonthlyUSD(row.original, rateFor(row.original.provider), workload), "monthly")}
+            </span>
+          ),
+        },
+        totalColumn(rateFor, workload, bounds),
+        commitTotalColumn("1yr", rateFor, workload),
+        commitTotalColumn("3yr", rateFor, workload),
+      );
     } else {
       const suffix = unitSuffix(priceMode);
       cols.push(
@@ -210,7 +301,8 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
         ),
     });
     return cols;
-  }, [priceMode, bounds, pinned, onTogglePin]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [priceMode, bounds, pinned, onTogglePin, rateFor, workload]);
 
   const table = useReactTable({
     data: rows,
@@ -278,7 +370,12 @@ export function ComparisonTable({ rows, priceMode, groupBy, pinned, onTogglePin 
                     </button>
                     <GroupLabel groupBy={groupBy} value={String(row.getGroupingValue(groupBy))} />
                     <span className="group-count">{row.subRows.length}</span>
-                    <GroupMeta leaves={row.subRows.map((s) => s.original)} priceMode={priceMode} />
+                    <GroupMeta
+                    leaves={row.subRows.map((s) => s.original)}
+                    priceMode={priceMode}
+                    rateFor={rateFor}
+                    workload={workload}
+                  />
                   </td>
                 </tr>
               );
@@ -318,30 +415,115 @@ function GroupLabel({ groupBy, value }: { groupBy: GroupBy; value: string }) {
   return <span className="group-name">{value}</span>;
 }
 
-// Per-group insight: instance count, cheapest on-demand, and best $/vCPU.
-function GroupMeta({ leaves, priceMode }: { leaves: InstancePrice[]; priceMode: PriceMode }) {
+// Per-group insight: instance count, cheapest headline price, and best $/vCPU.
+function GroupMeta({
+  leaves,
+  priceMode,
+  rateFor,
+  workload,
+}: {
+  leaves: InstancePrice[];
+  priceMode: PriceMode;
+  rateFor: RateLookup;
+  workload: Workload;
+}) {
   const norm = priceMode === "normalized";
+  const allIn = priceMode === "storage" || priceMode === "total";
+  const headline = (l: InstancePrice): number | null => {
+    if (norm) return l.perVcpuHourUSD;
+    if (allIn) return totalInUnit(l, rateFor(l.provider), workload, "monthly");
+    return priceInUnit(l, priceMode);
+  };
   const prices = leaves
-    .map((l) => (norm ? l.perVcpuHourUSD : priceInUnit(l, priceMode)))
+    .map(headline)
     .filter((v): v is number => v != null && Number.isFinite(v));
-  const vcpus = leaves
-    .map((l) => (norm ? l.perVcpuHourUSD : perVcpuInUnit(l, priceMode)))
-    .filter((v): v is number => v != null && Number.isFinite(v));
+  const vcpus = allIn
+    ? []
+    : leaves
+        .map((l) => (norm ? l.perVcpuHourUSD : perVcpuInUnit(l, priceMode)))
+        .filter((v): v is number => v != null && Number.isFinite(v));
   if (prices.length === 0) return null;
   const minP = Math.min(...prices);
   const minV = vcpus.length ? Math.min(...vcpus) : null;
-  const fp = (v: number) => (norm ? fmtUSD(v, 4) : fmtMoney(v, priceMode));
+  const fmtMode: PriceMode = allIn ? "monthly" : priceMode;
+  const fp = (v: number) => (norm ? fmtUSD(v, 4) : fmtMoney(v, fmtMode));
   return (
     <span className="group-meta">
       from <b>{fp(minP)}</b>
-      {norm ? "/vCPU-hr" : ""}
-      {!norm && minV != null && (
+      {norm ? "/vCPU-hr" : allIn ? " all-in/mo" : ""}
+      {!norm && !allIn && minV != null && (
         <>
           {" · "}best {fmtMoney(minV, priceMode)}/vCPU·{unitWord(priceMode)}
         </>
       )}
     </span>
   );
+}
+
+// The all-in (compute + storage + egress) headline column. Shares id "ondemand"
+// so the table's default sort + heat-map styling apply uniformly across views.
+function totalColumn(
+  rateFor: RateLookup,
+  workload: Workload,
+  bounds: { min: number; max: number },
+): ColumnDef<InstancePrice> {
+  return {
+    id: "ondemand",
+    header: "Total $/mo",
+    accessorFn: (r) => totalInUnit(r, rateFor(r.provider), workload, "monthly") ?? Infinity,
+    aggregationFn: "min",
+    size: 132,
+    cell: ({ row }) => {
+      const v = totalInUnit(row.original, rateFor(row.original.provider), workload, "monthly");
+      return (
+        <span
+          className="cell-heat"
+          style={{ background: v == null ? "transparent" : heatColor(v, bounds.min, bounds.max) }}
+        >
+          {fmtMoney(v, "monthly")}
+        </span>
+      );
+    },
+  };
+}
+
+function commitTotalColumn(
+  term: Term,
+  rateFor: RateLookup,
+  workload: Workload,
+): ColumnDef<InstancePrice> {
+  return {
+    id: `${term}-total`,
+    header: `${term} Total $/mo`,
+    accessorFn: (r) => commitTotalInUnit(r, rateFor(r.provider), workload, term, "monthly") ?? Infinity,
+    size: 132,
+    cell: ({ row }) => {
+      const v = commitTotalInUnit(row.original, rateFor(row.original.provider), workload, term, "monthly");
+      if (v == null) return <span className="muted">—</span>;
+      const disc = discountFor(row.original, term);
+      return (
+        <span className="commit-cell">
+          {fmtMoney(v, "monthly")}
+          {disc != null && <span className="disc">-{Math.round(disc * 100)}%</span>}
+        </span>
+      );
+    },
+  };
+}
+
+// Where a row's priced storage came from: a Hetzner-matched size, the user's
+// override, Hetzner's free local disk, or the provider's default boot disk.
+function gbSource(r: InstancePrice, wl: Workload): string {
+  if (r.provider === "hetzner" || r.includedRef === "self")
+    return "bundled local disk (free)";
+  if (wl.matchHetzner) {
+    const ref = r.includedRef?.startsWith("hetzner:")
+      ? r.includedRef.slice("hetzner:".length)
+      : null;
+    return ref ? `matched to Hetzner ${ref}` : "matched to Hetzner";
+  }
+  if (wl.storageGiB != null) return "your override (applied to all)";
+  return "provider default boot disk (billed)";
 }
 
 function commitColumn(term: Term, mode: PriceMode): ColumnDef<InstancePrice> {

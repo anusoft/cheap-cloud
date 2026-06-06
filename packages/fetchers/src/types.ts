@@ -1,4 +1,4 @@
-import type { InstancePrice, ProviderId } from "@cheap-cloud/schema";
+import type { InstancePrice, ProviderId, ProviderRate } from "@cheap-cloud/schema";
 import type { Region, ProviderRegion } from "./regions.ts";
 
 export interface FetchContext {
@@ -15,6 +15,12 @@ export interface ProviderFetcher {
   available(): { ok: boolean; reason?: string };
   /** Pull and normalize this provider's rows for the given region. */
   fetch(ctx: FetchContext): Promise<InstancePrice[]>;
+  /**
+   * Optional: live block-storage / egress rates for the region. Return any
+   * subset of ProviderRate fields to override the published baseline (the CLI
+   * merges over `publishedRate(provider)`); return null/omit to use published.
+   */
+  rates?(ctx: FetchContext): Promise<Partial<Omit<ProviderRate, "provider">> | null>;
 }
 
 // Classify an instance family from a provider-specific token (best effort,

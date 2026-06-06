@@ -5,12 +5,15 @@ import {
   type Filters,
   type GroupBy,
   type PriceMode,
+  type Workload,
+  DEFAULT_WORKLOAD,
   PROVIDER_LABELS,
   applyFilters,
-  commitInUnit,
   fmtMoney,
   fmtUSD,
   priceInUnit,
+  ratesFromSnapshot,
+  totalInUnit,
   unitSuffix,
 } from "./lib/view";
 import { ComparisonTable } from "./components/comparison-table";
@@ -40,6 +43,22 @@ export function Comparison() {
   const [groupBy, setGroupBy] = useState<GroupBy>("none");
   const [pinned, setPinned] = useState<Set<string>>(new Set());
   const [filters, setFilters] = useState<Filters>(emptyFilters);
+  const [workload, setWorkload] = useState<Workload>(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem("cc.workload.v2") || "null");
+      const ok = (v: unknown) => v === null || typeof v === "number";
+      if (saved && typeof saved === "object" && ok(saved.storageGiB) && ok(saved.egressGiB)) {
+        return { ...DEFAULT_WORKLOAD, ...saved, matchHetzner: saved.matchHetzner === true };
+      }
+    } catch {
+      // ignore malformed persisted value
+    }
+    return DEFAULT_WORKLOAD;
+  });
+  useEffect(
+    () => localStorage.setItem("cc.workload.v2", JSON.stringify(workload)),
+    [workload],
+  );
 
   // ── sidebar: collapsible + resizable (persisted) ──────────────────────────
   const [sidebarW, setSidebarW] = useState(() =>
@@ -92,6 +111,9 @@ export function Comparison() {
   const filtered = useMemo(() => applyFilters(all, filters), [all, filters]);
   const pinnedRows = useMemo(() => all.filter((r) => pinned.has(r.id)), [all, pinned]);
   const regionMeta = regions.find((r) => r.key === regionKey);
+  // Provider storage/egress rates from the snapshot (or the published fallback).
+  const rateFor = useMemo(() => ratesFromSnapshot(snap), [snap]);
+  const allIn = priceMode === "storage" || priceMode === "total";
 
   const togglePin = useCallback((id: string) => {
     setPinned((s) => {
@@ -104,7 +126,11 @@ export function Comparison() {
   // Cheapest in the CURRENTLY SELECTED unit, recomputed on every filter change.
   const cheapest = useMemo(() => {
     const metric = (r: InstancePrice) =>
-      priceMode === "normalized" ? r.perVcpuHourUSD : priceInUnit(r, priceMode);
+      priceMode === "normalized"
+        ? r.perVcpuHourUSD
+        : allIn
+          ? totalInUnit(r, rateFor(r.provider), workload, "monthly")
+          : priceInUnit(r, priceMode);
     let best: InstancePrice | null = null;
     let bestV = Infinity;
     for (const r of filtered) {
@@ -115,8 +141,9 @@ export function Comparison() {
       }
     }
     return best ? { row: best, val: bestV } : null;
-  }, [filtered, priceMode]);
-  const cheapestLabel = priceMode === "normalized" ? "$/vCPU-hr" : unitSuffix(priceMode);
+  }, [filtered, priceMode, allIn, rateFor, workload]);
+  const cheapestLabel =
+    priceMode === "normalized" ? "$/vCPU-hr" : allIn ? "Total $/mo" : unitSuffix(priceMode);
 
   return (
     <div className="app">
@@ -170,6 +197,8 @@ export function Comparison() {
               setPriceMode={setPriceMode}
               groupBy={groupBy}
               setGroupBy={setGroupBy}
+              workload={workload}
+              setWorkload={setWorkload}
               shown={filtered.length}
               total={all.length}
             />
@@ -193,9 +222,9 @@ export function Comparison() {
                     {r.vcpu} vCPU / {r.ramGiB} GiB · {r.arch}
                   </div>
                   <div className="pc-price">
-                    {fmtMoney(priceInUnit(r, priceMode === "normalized" ? "monthly" : priceMode), priceMode === "normalized" ? "monthly" : priceMode)}
-                    {" · "}
-                    {fmtUSD(r.perVcpuHourUSD, 4)}/vCPU-hr
+                    {allIn
+                      ? `${fmtMoney(totalInUnit(r, rateFor(r.provider), workload, "monthly"), "monthly")} all-in/mo`
+                      : `${fmtMoney(priceInUnit(r, priceMode === "normalized" ? "monthly" : priceMode), priceMode === "normalized" ? "monthly" : priceMode)} · ${fmtUSD(r.perVcpuHourUSD, 4)}/vCPU-hr`}
                   </div>
                 </div>
               ))}
@@ -218,6 +247,8 @@ export function Comparison() {
               groupBy={groupBy}
               pinned={pinned}
               onTogglePin={togglePin}
+              rateFor={rateFor}
+              workload={workload}
             />
           )}
         </main>

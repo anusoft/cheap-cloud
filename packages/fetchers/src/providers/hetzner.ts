@@ -14,6 +14,7 @@ interface HetznerPrice {
   location: string;
   price_hourly: { net: string; gross: string };
   price_monthly: { net: string; gross: string };
+  included_traffic?: number; // bytes/month of egress included at this location
 }
 interface HetznerType {
   name: string;
@@ -24,8 +25,11 @@ interface HetznerType {
   architecture: "x86" | "arm";
   deprecated?: boolean;
   deprecation?: unknown | null;
+  included_traffic?: number; // bytes/month (older API shape; may live on price)
   prices: HetznerPrice[];
 }
+
+const BYTES_PER_GIB = 1024 ** 3;
 interface HetznerResp {
   server_types: HetznerType[];
   meta?: { pagination?: { next_page: number | null } };
@@ -99,6 +103,15 @@ export const hetznerFetcher: ProviderFetcher = {
         monthlyUSD: monthly,
         perVcpuHourUSD: null,
         perGbHourUSD: null,
+        // Hetzner attaches local NVMe to every server, included in the price,
+        // plus a monthly egress allowance (included_traffic, in bytes).
+        bundledStorageGiB: t.disk,
+        bundledStorageType: "local-nvme",
+        includedStorageGiB: t.disk,
+        includedBandwidthGiB: Math.round(
+          (price.included_traffic ?? t.included_traffic ?? 0) / BYTES_PER_GIB,
+        ),
+        includedRef: "self",
         commitments: [], // Hetzner is on-demand only (no reserved/committed pricing)
         source: {
           method: "api",

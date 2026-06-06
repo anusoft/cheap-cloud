@@ -1,4 +1,4 @@
-import type { Snapshot, ProviderId } from "@cheap-cloud/schema";
+import { applyBundledReference, type Snapshot, type ProviderId } from "@cheap-cloud/schema";
 
 // Region metadata as written by `prep-data` into public/data/regions.json.
 export interface RegionMeta {
@@ -28,5 +28,9 @@ export async function loadRegions(): Promise<RegionMeta[]> {
 export async function loadSnapshot(key: string): Promise<Snapshot | null> {
   const res = await fetch(`${base}data/${key}.json`);
   if (!res.ok) return null;
-  return (await res.json()) as Snapshot;
+  const snap = (await res.json()) as Snapshot;
+  // Fill included storage/bandwidth from the nearest Hetzner bundle for
+  // snapshots that carry Hetzner bundle data but weren't pre-processed.
+  applyBundledReference(snap.rows);
+  return snap;
 }
