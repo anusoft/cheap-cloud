@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { InstancePrice, ProviderId, Snapshot } from "@cheap-cloud/schema";
 import { loadSnapshot } from "./lib/data";
+import { hetznerPriceChanges, type HetznerPriceChange } from "./lib/analysis-history";
 import {
   PROVIDER_COLORS,
   PROVIDER_LABELS,
@@ -15,11 +16,16 @@ type Lang = "en" | "th";
 
 const usd = (n: number | null | undefined) => (n == null ? "—" : `$${Math.round(n)}`);
 const usd2 = (n: number | null | undefined) => (n == null ? "—" : `$${n.toFixed(2)}`);
+const signedUsd2 = (n: number | null | undefined) =>
+  n == null ? "—" : `${n >= 0 ? "+" : "-"}$${Math.abs(n).toFixed(2)}`;
 const pct = (n: number | null | undefined) => (n == null ? "—" : `${Math.round(n * 100)}%`);
+const signedPct = (n: number | null | undefined) =>
+  n == null ? "—" : `${n >= 0 ? "+" : "-"}${Math.abs(n * 100).toFixed(1)}%`;
 const L = (lang: Lang, en: string, th: string) => (lang === "en" ? en : th);
 
 // "Match Hetzner" sizing: price the disk a comparable Hetzner box bundles.
 const MATCH: Workload = { storageGiB: null, egressGiB: null, matchHetzner: true };
+const HETZNER_PREVIOUS_KEY = "bangkok-2026-06-06";
 
 function commit(r: InstancePrice, term: "1yr" | "3yr"): number | null {
   const c = r.commitments.find((x) => x.term === term);
@@ -185,6 +191,15 @@ const T = {
   colMatch: { en: "Match Hetzner @ 4c/16g", th: "เทียบเท่า Hetzner @ 4c/16g" },
   commitH: { en: "Commitment savings", th: "ส่วนลดจากการผูกสัญญา" },
   hetznerH: { en: "Hetzner Singapore — the budget option", th: "Hetzner สิงคโปร์ — ตัวเลือกประหยัด" },
+  hetznerChangeH: { en: "Hetzner price change — more expensive after refresh", th: "ราคา Hetzner เปลี่ยน — แพงขึ้นหลังรีเฟรช" },
+  hetznerChangeNote: {
+    en: "Compared with the previous Bangkok snapshot. Matching server types only, sorted by largest monthly increase.",
+    th: "เทียบกับสแนปช็อตกรุงเทพฯ ก่อนหน้า เฉพาะรุ่นที่มีทั้งสองสแนปช็อต เรียงตามส่วนต่างรายเดือนที่เพิ่มขึ้นมากสุด",
+  },
+  colShape: { en: "Shape", th: "สเปก" },
+  colOld: { en: "Old /mo", th: "เดิม /เดือน" },
+  colNow: { en: "Now /mo", th: "ตอนนี้ /เดือน" },
+  colChange: { en: "Change", th: "ส่วนต่าง" },
   recoH: { en: "Recommendations", th: "คำแนะนำ" },
   methodH: { en: "Methodology & caveats", th: "ระเบียบวิธีและข้อจำกัด" },
   method: {
@@ -273,12 +288,28 @@ function findingsList(lang: Lang, f: Facts): string[] {
 export function Analysis() {
   const [lang, setLang] = useState<Lang>("en");
   const [snap, setSnap] = useState<Snapshot | null>(null);
+  const [previousSnap, setPreviousSnap] = useState<Snapshot | null>(null);
   useEffect(() => {
-    loadSnapshot("bangkok").then(setSnap);
+    let cancelled = false;
+    Promise.all([loadSnapshot("bangkok"), loadSnapshot(HETZNER_PREVIOUS_KEY)]).then(
+      ([current, previous]) => {
+        if (cancelled) return;
+        setSnap(current);
+        setPreviousSnap(previous);
+      },
+    );
+    return () => {
+      cancelled = true;
+    };
   }, []);
   const rows = (snap?.rows ?? []) as InstancePrice[];
+  const previousRows = (previousSnap?.rows ?? []) as InstancePrice[];
   const rateFor = useMemo(() => ratesFromSnapshot(snap), [snap]);
   const facts = useMemo(() => computeFacts(rows, rateFor), [rows, rateFor]);
+  const hzChanges = useMemo(
+    () => hetznerPriceChanges(rows, previousRows),
+    [rows, previousRows],
+  );
   const benches = useMemo(
     () => BENCHMARKS.map((c) => ({ ...c, rows: bench(rows, c.vcpu, c.ramMin, c.ramMax) })),
     [rows],
@@ -388,6 +419,12 @@ export function Analysis() {
           ))}
         </Section>
 
+        <Section title={tr("hetznerChangeH")}>
+          <p>{hetznerChangeNote(lang, hzChanges, snap, previousSnap)}</p>
+          <p className="muted small">{tr("hetznerChangeNote")}</p>
+          <HetznerChangeTable changes={hzChanges} tr={tr} />
+        </Section>
+
         <Section title={tr("recoH")}>
           <ul>
             {recoList(lang, facts).map((p, i) => (
@@ -447,6 +484,54 @@ function hetznerNotes(lang: Lang, f: Facts): string[] {
     );
   }
   return out;
+}
+
+function dateLabel(snap: Snapshot | null): string {
+  return snap?.generatedAt ? snap.generatedAt.slice(0, 10) : "—";
+}
+
+function hetznerChangeNote(
+  lang: Lang,
+  changes: HetznerPriceChange[],
+  current: Snapshot | null,
+  previous: Snapshot | null,
+): string {
+  if (!previous)
+    return L(
+      lang,
+      "Previous Hetzner pricing snapshot is not available in this build.",
+      "บิลด์นี้ไม่มีสแนปช็อตราคา Hetzner ก่อนหน้า",
+    );
+  if (!changes.length)
+    return L(
+      lang,
+      `No matching Hetzner server types were found between ${dateLabel(previous)} and ${dateLabel(current)}.`,
+      `ไม่พบรุ่น Hetzner ที่ตรงกันระหว่าง ${dateLabel(previous)} และ ${dateLabel(current)}`,
+    );
+
+  const increased = changes.filter((c) => c.deltaUSD > 0);
+  const decreased = changes.filter((c) => c.deltaUSD < 0);
+  const biggest = increased[0] ?? changes[0]!;
+  const cheaperText = decreased.length
+    ? L(
+        lang,
+        ` ${decreased.length} smaller moves went down, mostly from FX and line-item reshuffling.`,
+        ` มี ${decreased.length} รุ่นที่ลดลงเล็กน้อย ส่วนใหญ่จาก FX และการจัดรายการราคาใหม่`,
+      )
+    : "";
+
+  if (!increased.length)
+    return L(
+      lang,
+      `Compared with ${dateLabel(previous)}, none of the ${changes.length} matching Hetzner server types became more expensive.`,
+      `เทียบกับ ${dateLabel(previous)} ไม่มีรุ่น Hetzner ที่ตรงกันทั้ง ${changes.length} รุ่นที่แพงขึ้น`,
+    );
+
+  return L(
+    lang,
+    `Compared with the old ${dateLabel(previous)} pricing, Hetzner is now more expensive on ${increased.length} of ${changes.length} matching server types. Biggest increase: ${biggest.instanceName} moved from ${usd2(biggest.oldMonthlyUSD)}/mo to ${usd2(biggest.currentMonthlyUSD)}/mo (${signedUsd2(biggest.deltaUSD)}, ${signedPct(biggest.deltaPct)}).${cheaperText}`,
+    `เทียบกับราคาเดิม ${dateLabel(previous)} ตอนนี้ Hetzner แพงขึ้นใน ${increased.length} จาก ${changes.length} รุ่นที่ตรงกัน เพิ่มแรงสุดคือ ${biggest.instanceName} จาก ${usd2(biggest.oldMonthlyUSD)}/เดือน เป็น ${usd2(biggest.currentMonthlyUSD)}/เดือน (${signedUsd2(biggest.deltaUSD)}, ${signedPct(biggest.deltaPct)})${cheaperText}`,
+  );
 }
 
 function recoList(lang: Lang, f: Facts): string[] {
@@ -579,6 +664,47 @@ function StorageTable({
             </tr>
           );
         })}
+      </tbody>
+    </table>
+  );
+}
+
+function HetznerChangeTable({
+  changes,
+  tr,
+}: {
+  changes: HetznerPriceChange[];
+  tr: (k: keyof typeof T) => string;
+}) {
+  const rows = changes.filter((c) => c.deltaUSD > 0).slice(0, 8);
+  if (rows.length === 0) return null;
+  return (
+    <table className="bench">
+      <thead>
+        <tr>
+          <th>{tr("colInstance")}</th>
+          <th>{tr("colShape")}</th>
+          <th>{tr("colOld")}</th>
+          <th>{tr("colNow")}</th>
+          <th>{tr("colChange")}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr key={r.instanceName}>
+            <td className="mono">{r.instanceName}</td>
+            <td className="num muted">
+              {r.vcpu}c / {r.ramGiB} GB
+            </td>
+            <td className="num">{usd2(r.oldMonthlyUSD)}</td>
+            <td className="num strong">{usd2(r.currentMonthlyUSD)}</td>
+            <td className="num">
+              <span className="conf proxy">
+                {signedUsd2(r.deltaUSD)} · {signedPct(r.deltaPct)}
+              </span>
+            </td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );

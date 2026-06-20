@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "regionKey": "bangkok",
-  "generatedAt": "2026-06-06T12:29:21.772Z",
+  "generatedAt": "2026-06-20T03:25:38.279Z",
   "providers": [
     "huawei",
     "tencent",
@@ -26,6 +26,8 @@
       "monthlyUSD": 6684.2304,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -63,6 +65,8 @@
       "monthlyUSD": 278.50960000000003,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -100,6 +104,8 @@
       "monthlyUSD": 69.62740000000001,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -137,6 +143,8 @@
       "monthlyUSD": 270.1,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -174,6 +182,8 @@
       "monthlyUSD": 1653.8880000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -211,6 +221,8 @@
       "monthlyUSD": 1965.9776,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -248,6 +260,8 @@
       "monthlyUSD": 625.464,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -285,6 +299,8 @@
       "monthlyUSD": 61.4368,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -322,6 +338,8 @@
       "monthlyUSD": 255.41240000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -359,6 +377,8 @@
       "monthlyUSD": 78.183,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -396,6 +416,8 @@
       "monthlyUSD": 161.5782,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -433,6 +455,8 @@
       "monthlyUSD": 30.7184,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "1yr",
@@ -470,6 +494,8 @@
       "monthlyUSD": 111.39800000000001,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -507,6 +533,8 @@
       "monthlyUSD": 4.3069999999999995,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -544,6 +572,8 @@
       "monthlyUSD": 9827.99,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -566,6 +596,8 @@
       "monthlyUSD": 3.5039999999999996,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "3yr",
@@ -603,6 +635,8 @@
       "monthlyUSD": 1584.5088,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -640,6 +674,8 @@
       "monthlyUSD": 1924.061,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -677,6 +713,8 @@
       "monthlyUSD": 188.632,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -714,6 +752,8 @@
       "monthlyUSD": 1782.5723999999998,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -751,6 +791,8 @@
       "monthlyUSD": 204.76500000000001,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [],
       "source": {
         "method": "api",
@@ -773,6 +815,8 @@
       "monthlyUSD": 374.05199999999996,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [],
       "source": {
         "method": "api",
@@ -795,6 +839,8 @@
       "monthlyUSD": 5879.2448,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -832,6 +878,8 @@
       "monthlyUSD": 70.08,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -869,6 +917,8 @@
       "monthlyUSD": 1941.1357,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -906,6 +956,8 @@
       "monthlyUSD": 4913.995,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -928,6 +980,8 @@
       "monthlyUSD": 1364.4576,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -965,6 +1019,8 @@
       "monthlyUSD": 238.27200000000002,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -1002,6 +1058,8 @@
       "monthlyUSD": 94.316,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -1039,6 +1097,8 @@
       "monthlyUSD": 4488.624,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -1061,6 +1121,8 @@
       "monthlyUSD": 4409.4336,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -1098,6 +1160,8 @@
       "monthlyUSD": 187.02599999999998,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [],
       "source": {
         "method": "api",
@@ -1120,6 +1184,8 @@
       "monthlyUSD": 312.732,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -1157,6 +1223,8 @@
       "monthlyUSD": 9507.0528,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -1194,6 +1262,8 @@
       "monthlyUSD": 485.28209999999996,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -1231,6 +1301,8 @@
       "monthlyUSD": 178.12,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -1268,6 +1340,8 @@
       "monthlyUSD": 194.618,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -1305,6 +1379,8 @@
       "monthlyUSD": 119.13600000000001,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -1342,6 +1418,8 @@
       "monthlyUSD": 99.0318,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -1379,6 +1457,8 @@
       "monthlyUSD": 1207.274,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -1416,6 +1496,8 @@
       "monthlyUSD": 280.466,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -1453,6 +1535,8 @@
       "monthlyUSD": 1469.8112,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -1490,6 +1574,8 @@
       "monthlyUSD": 6353.5185,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -1527,6 +1613,8 @@
       "monthlyUSD": 139.25480000000002,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -1564,6 +1652,8 @@
       "monthlyUSD": 1012.656,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -1601,6 +1691,8 @@
       "monthlyUSD": 1350.938,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [],
       "source": {
         "method": "api",
@@ -1623,6 +1715,8 @@
       "monthlyUSD": 60.663,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -1660,6 +1754,8 @@
       "monthlyUSD": 12707.037,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -1697,6 +1793,8 @@
       "monthlyUSD": 4273.42,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -1734,6 +1832,8 @@
       "monthlyUSD": 748.1039999999999,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [],
       "source": {
         "method": "api",
@@ -1756,6 +1856,8 @@
       "monthlyUSD": 277.546,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -1793,6 +1895,8 @@
       "monthlyUSD": 1121.718,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -1830,6 +1934,8 @@
       "monthlyUSD": 1081.13,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -1867,6 +1973,8 @@
       "monthlyUSD": 127.70620000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "3yr",
@@ -1904,6 +2012,8 @@
       "monthlyUSD": 17954.496,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -1926,6 +2036,8 @@
       "monthlyUSD": 4527.168,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -1963,6 +2075,8 @@
       "monthlyUSD": 222.869,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -2000,6 +2114,8 @@
       "monthlyUSD": 12707.037,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -2037,6 +2153,8 @@
       "monthlyUSD": 19060.5555,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2074,6 +2192,8 @@
       "monthlyUSD": 40.077,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -2111,6 +2231,8 @@
       "monthlyUSD": 1682.65,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2148,6 +2270,8 @@
       "monthlyUSD": 2701.803,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [],
       "source": {
         "method": "api",
@@ -2170,6 +2294,8 @@
       "monthlyUSD": 1532.4743999999998,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -2207,6 +2333,8 @@
       "monthlyUSD": 145.9416,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -2244,6 +2372,8 @@
       "monthlyUSD": 148.92,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -2281,6 +2411,8 @@
       "monthlyUSD": 1671.0576,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -2318,6 +2450,8 @@
       "monthlyUSD": 138.773,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -2355,6 +2489,8 @@
       "monthlyUSD": 1322.906,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -2392,6 +2528,8 @@
       "monthlyUSD": 9530.2814,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2429,6 +2567,8 @@
       "monthlyUSD": 1455.8536000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -2466,6 +2606,8 @@
       "monthlyUSD": 253.164,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -2503,6 +2645,8 @@
       "monthlyUSD": 3877.8768000000005,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2540,6 +2684,8 @@
       "monthlyUSD": 7255.148800000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -2577,6 +2723,8 @@
       "monthlyUSD": 818.987,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [],
       "source": {
         "method": "api",
@@ -2599,6 +2747,8 @@
       "monthlyUSD": 6732.936000000001,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -2621,6 +2771,8 @@
       "monthlyUSD": 3502.5984,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2658,6 +2810,8 @@
       "monthlyUSD": 297.84,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -2695,6 +2849,8 @@
       "monthlyUSD": 1474.4832,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -2732,6 +2888,8 @@
       "monthlyUSD": 356.24,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -2769,6 +2927,8 @@
       "monthlyUSD": 3176.7628999999997,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -2806,6 +2966,8 @@
       "monthlyUSD": 3574.08,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -2843,6 +3005,8 @@
       "monthlyUSD": 17.374000000000002,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -2880,6 +3044,8 @@
       "monthlyUSD": 51.027,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -2917,6 +3083,8 @@
       "monthlyUSD": 560.859,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -2954,6 +3122,8 @@
       "monthlyUSD": 816.2130000000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -2991,6 +3161,8 @@
       "monthlyUSD": 778.326,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -3028,6 +3200,8 @@
       "monthlyUSD": 51.684000000000005,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -3065,6 +3239,8 @@
       "monthlyUSD": 396.1272,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -3102,6 +3278,8 @@
       "monthlyUSD": 2457.034,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -3124,6 +3302,8 @@
       "monthlyUSD": 29.784000000000002,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -3161,6 +3341,8 @@
       "monthlyUSD": 712.48,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -3198,6 +3380,8 @@
       "monthlyUSD": 2585.2512,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -3235,6 +3419,8 @@
       "monthlyUSD": 1067.99,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -3272,6 +3458,8 @@
       "monthlyUSD": 72.9708,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -3309,6 +3497,8 @@
       "monthlyUSD": 595.68,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -3346,6 +3536,8 @@
       "monthlyUSD": 2448.5660000000003,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -3383,6 +3575,8 @@
       "monthlyUSD": 1751.2992,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -3420,6 +3614,8 @@
       "monthlyUSD": 4765.44,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -3457,6 +3653,8 @@
       "monthlyUSD": 122.8736,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "3yr",
@@ -3494,6 +3692,8 @@
       "monthlyUSD": 909.6384,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -3531,6 +3731,8 @@
       "monthlyUSD": 80.7891,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -3568,6 +3770,8 @@
       "monthlyUSD": 1228.517,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [],
       "source": {
         "method": "api",
@@ -3590,6 +3794,8 @@
       "monthlyUSD": 982.9888,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -3627,6 +3833,8 @@
       "monthlyUSD": 103.36800000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "3yr",
@@ -3664,6 +3872,8 @@
       "monthlyUSD": 25.842000000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "1yr",
@@ -3701,6 +3911,8 @@
       "monthlyUSD": 74.46,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -3738,6 +3950,8 @@
       "monthlyUSD": 2382.72,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -3775,6 +3989,8 @@
       "monthlyUSD": 2026.3339999999998,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [],
       "source": {
         "method": "api",
@@ -3797,6 +4013,8 @@
       "monthlyUSD": 198.0636,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -3834,6 +4052,8 @@
       "monthlyUSD": 1876.3919999999998,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -3871,6 +4091,8 @@
       "monthlyUSD": 2025.312,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -3908,6 +4130,8 @@
       "monthlyUSD": 1191.36,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -3945,6 +4169,8 @@
       "monthlyUSD": 1282.683,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -3982,6 +4208,8 @@
       "monthlyUSD": 1813.7872000000002,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -4019,6 +4247,8 @@
       "monthlyUSD": 1906.1760000000002,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -4056,6 +4286,8 @@
       "monthlyUSD": 646.3128,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -4093,6 +4325,8 @@
       "monthlyUSD": 102.054,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -4130,6 +4364,8 @@
       "monthlyUSD": 63.291,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -4167,6 +4403,8 @@
       "monthlyUSD": 42.193999999999996,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [],
       "source": {
         "method": "api",
@@ -4189,6 +4427,8 @@
       "monthlyUSD": 121.3187,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -4226,6 +4466,8 @@
       "monthlyUSD": 28.4262,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "3yr",
@@ -4263,6 +4505,8 @@
       "monthlyUSD": 75.482,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -4300,6 +4544,8 @@
       "monthlyUSD": 148.5477,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -4337,6 +4583,8 @@
       "monthlyUSD": 2939.6224,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -4374,6 +4622,8 @@
       "monthlyUSD": 1588.3778000000002,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -4411,6 +4661,8 @@
       "monthlyUSD": 60.809,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -4448,6 +4700,8 @@
       "monthlyUSD": 2720.6808,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -4485,6 +4739,8 @@
       "monthlyUSD": 389.163,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -4522,6 +4778,8 @@
       "monthlyUSD": 160.308,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -4559,6 +4817,8 @@
       "monthlyUSD": 25414.074,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -4596,6 +4856,8 @@
       "monthlyUSD": 2376.7632,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -4633,6 +4895,8 @@
       "monthlyUSD": 1114.0384000000001,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -4670,6 +4934,8 @@
       "monthlyUSD": 1518.984,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -4707,6 +4973,8 @@
       "monthlyUSD": 34.813700000000004,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -4744,6 +5012,8 @@
       "monthlyUSD": 1509.056,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -4781,6 +5051,8 @@
       "monthlyUSD": 2228.0768000000003,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -4818,6 +5090,8 @@
       "monthlyUSD": 34.675,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -4855,6 +5129,8 @@
       "monthlyUSD": 1459.4160000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -4892,6 +5168,8 @@
       "monthlyUSD": 1984.286,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -4929,6 +5207,8 @@
       "monthlyUSD": 243.236,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "3yr",
@@ -4966,6 +5246,8 @@
       "monthlyUSD": 734.9056,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -5003,6 +5285,8 @@
       "monthlyUSD": 206.73600000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "3yr",
@@ -5040,6 +5324,8 @@
       "monthlyUSD": 168.84900000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [],
       "source": {
         "method": "api",
@@ -5062,6 +5348,8 @@
       "monthlyUSD": 24.309,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "3yr",
@@ -5099,6 +5387,8 @@
       "monthlyUSD": 69.35,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -5136,6 +5426,8 @@
       "monthlyUSD": 297.0954,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -5173,6 +5465,8 @@
       "monthlyUSD": 409.53000000000003,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [],
       "source": {
         "method": "api",
@@ -5195,6 +5489,8 @@
       "monthlyUSD": 330.69,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -5232,6 +5528,8 @@
       "monthlyUSD": 1819.2768,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -5269,6 +5567,8 @@
       "monthlyUSD": 63.853100000000005,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -5306,6 +5606,8 @@
       "monthlyUSD": 55.699000000000005,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -5343,6 +5645,8 @@
       "monthlyUSD": 27.886,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -5380,6 +5684,8 @@
       "monthlyUSD": 970.5641999999999,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -5417,6 +5723,8 @@
       "monthlyUSD": 91.8632,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -5454,6 +5762,8 @@
       "monthlyUSD": 245.7472,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -5491,6 +5801,8 @@
       "monthlyUSD": 80.154,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -5528,6 +5840,8 @@
       "monthlyUSD": 826.9440000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -5565,6 +5879,8 @@
       "monthlyUSD": 1810.838,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -5602,6 +5918,8 @@
       "monthlyUSD": 972.944,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -5639,6 +5957,8 @@
       "monthlyUSD": 3169.0176,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -5676,6 +5996,8 @@
       "monthlyUSD": 557.0192000000001,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -5713,6 +6035,8 @@
       "monthlyUSD": 2918.8320000000003,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -5750,6 +6074,8 @@
       "monthlyUSD": 204.03500000000003,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -5787,6 +6113,8 @@
       "monthlyUSD": 641.378,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -5824,6 +6152,8 @@
       "monthlyUSD": 2136.71,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -5861,6 +6191,8 @@
       "monthlyUSD": 4670.1312,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -5898,6 +6230,8 @@
       "monthlyUSD": 2243.509,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -5935,6 +6269,8 @@
       "monthlyUSD": 506.328,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -5972,6 +6308,8 @@
       "monthlyUSD": 2645.739,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6009,6 +6347,8 @@
       "monthlyUSD": 113.7048,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -6046,6 +6386,8 @@
       "monthlyUSD": 661.453,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -6083,6 +6425,8 @@
       "monthlyUSD": 82.709,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -6120,6 +6464,8 @@
       "monthlyUSD": 4052.7410000000004,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -6142,6 +6488,8 @@
       "monthlyUSD": 675.469,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [],
       "source": {
         "method": "api",
@@ -6164,6 +6512,8 @@
       "monthlyUSD": 5457.8304,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6201,6 +6551,8 @@
       "monthlyUSD": 6486.9552,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6238,6 +6590,8 @@
       "monthlyUSD": 323.1564,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -6275,6 +6629,8 @@
       "monthlyUSD": 337.69800000000004,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [],
       "source": {
         "method": "api",
@@ -6297,6 +6653,8 @@
       "monthlyUSD": 6353.5185,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -6334,6 +6692,8 @@
       "monthlyUSD": 7505.567999999999,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -6371,6 +6731,8 @@
       "monthlyUSD": 2263.584,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6408,6 +6770,8 @@
       "monthlyUSD": 3627.5744000000004,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -6445,6 +6809,8 @@
       "monthlyUSD": 1787.04,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6482,6 +6848,8 @@
       "monthlyUSD": 3264.779,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6519,6 +6887,8 @@
       "monthlyUSD": 5441.3616,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -6556,6 +6926,8 @@
       "monthlyUSD": 367.4528,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -6593,6 +6965,8 @@
       "monthlyUSD": 1292.6256,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -6630,6 +7004,8 @@
       "monthlyUSD": 227.4096,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "3yr",
@@ -6667,6 +7043,8 @@
       "monthlyUSD": 454.8192,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -6704,6 +7082,8 @@
       "monthlyUSD": 1021.6496000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -6741,6 +7121,8 @@
       "monthlyUSD": 2162.26,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -6778,6 +7160,8 @@
       "monthlyUSD": 7371.029,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -6800,6 +7184,8 @@
       "monthlyUSD": 6036.224,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -6837,6 +7223,8 @@
       "monthlyUSD": 413.47200000000004,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -6874,6 +7262,8 @@
       "monthlyUSD": 603.637,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -6911,6 +7301,8 @@
       "monthlyUSD": 320.689,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -6948,6 +7340,8 @@
       "monthlyUSD": 41.318,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -6985,6 +7379,8 @@
       "monthlyUSD": 126.582,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -7022,6 +7418,8 @@
       "monthlyUSD": 754.528,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -7059,6 +7457,8 @@
       "monthlyUSD": 165.345,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -7096,6 +7496,8 @@
       "monthlyUSD": 1122.156,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [],
       "source": {
         "method": "api",
@@ -7118,6 +7520,8 @@
       "monthlyUSD": 906.8936000000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -7155,6 +7559,8 @@
       "monthlyUSD": 3342.1152,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -7192,6 +7598,8 @@
       "monthlyUSD": 8105.482000000001,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -7214,6 +7622,8 @@
       "monthlyUSD": 150.891,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -7251,6 +7661,8 @@
       "monthlyUSD": 6129.897599999999,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -7288,6 +7700,8 @@
       "monthlyUSD": 792.2544,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -7325,6 +7739,8 @@
       "monthlyUSD": 2501.856,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -7362,6 +7778,8 @@
       "monthlyUSD": 510.82480000000004,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -7399,6 +7817,8 @@
       "monthlyUSD": 8649.273599999999,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -7436,6 +7856,8 @@
       "monthlyUSD": 540.93,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -7473,6 +7895,8 @@
       "monthlyUSD": 8.687000000000001,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "3yr",
@@ -7510,6 +7934,8 @@
       "monthlyUSD": 1240.416,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -7547,6 +7973,8 @@
       "monthlyUSD": 56.8524,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -7584,6 +8012,8 @@
       "monthlyUSD": 6.935,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -7621,6 +8051,8 @@
       "monthlyUSD": 156.366,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -7658,6 +8090,8 @@
       "monthlyUSD": 953.0880000000001,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -7695,6 +8129,8 @@
       "monthlyUSD": 3752.7839999999997,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -7732,6 +8168,8 @@
       "monthlyUSD": 113.36170000000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -7769,6 +8207,8 @@
       "monthlyUSD": 2244.312,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -7791,6 +8231,8 @@
       "monthlyUSD": 2043.2992000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -7828,6 +8270,8 @@
       "monthlyUSD": 486.472,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -7865,6 +8309,8 @@
       "monthlyUSD": 49765.80820000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -7887,6 +8333,8 @@
       "monthlyUSD": 4324.52,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -7924,6 +8372,8 @@
       "monthlyUSD": 453.44680000000005,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -7961,6 +8411,8 @@
       "monthlyUSD": 19656.053,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -7983,6 +8435,8 @@
       "monthlyUSD": 1188.3816,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -8020,6 +8474,8 @@
       "monthlyUSD": 491.4944,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -8057,6 +8513,8 @@
       "monthlyUSD": 1250.928,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -8094,6 +8552,8 @@
       "monthlyUSD": 3243.39,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -8131,6 +8591,8 @@
       "monthlyUSD": 301.782,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -8168,6 +8630,8 @@
       "monthlyUSD": 74.27749999999999,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -8205,6 +8669,8 @@
       "monthlyUSD": 2728.9152,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -8242,6 +8708,8 @@
       "monthlyUSD": 97.309,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -8279,6 +8747,8 @@
       "monthlyUSD": 59.568000000000005,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -8316,6 +8786,8 @@
       "monthlyUSD": 2565.366,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -8353,6 +8825,8 @@
       "monthlyUSD": 476.54400000000004,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -8390,6 +8864,8 @@
       "monthlyUSD": 3064.9487999999997,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -8427,6 +8903,8 @@
       "monthlyUSD": 1167.5328,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -8464,6 +8942,8 @@
       "monthlyUSD": 2335.0656,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -8501,6 +8981,8 @@
       "monthlyUSD": 242.6447,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -8538,6 +9020,8 @@
       "monthlyUSD": 1945.888,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -8575,6 +9059,8 @@
       "monthlyUSD": 3018.112,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -8612,6 +9098,8 @@
       "monthlyUSD": 3891.776,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -8649,6 +9137,8 @@
       "monthlyUSD": 377.264,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -8686,6 +9176,8 @@
       "monthlyUSD": 583.7664,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -8723,6 +9215,8 @@
       "monthlyUSD": 226.72340000000003,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -8760,6 +9254,8 @@
       "monthlyUSD": 8977.248,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [],
       "source": {
         "method": "api",
@@ -8782,6 +9278,8 @@
       "monthlyUSD": 35.04,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -8819,6 +9317,8 @@
       "monthlyUSD": 408.07000000000005,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -8856,6 +9356,8 @@
       "monthlyUSD": 13.943,
       "perVcpuHourUSD": 0.023185227272727274,
       "perGbHourUSD": 0.0026775590551181105,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -8893,6 +9395,8 @@
       "monthlyUSD": 1556.725,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -8930,6 +9434,8 @@
       "monthlyUSD": 4753.5264,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -8967,6 +9473,8 @@
       "monthlyUSD": 1938.9384000000002,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -9004,6 +9512,8 @@
       "monthlyUSD": 1167.562,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -9041,6 +9551,8 @@
       "monthlyUSD": 1632.4260000000002,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -9078,6 +9590,8 @@
       "monthlyUSD": 140.233,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -9115,6 +9629,8 @@
       "monthlyUSD": 121.618,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -9152,6 +9668,8 @@
       "monthlyUSD": 2414.475,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9189,6 +9707,8 @@
       "monthlyUSD": 2376.7632,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9226,6 +9746,8 @@
       "monthlyUSD": 594.1908,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -9263,6 +9785,8 @@
       "monthlyUSD": 135.05,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -9300,6 +9824,8 @@
       "monthlyUSD": 1429.6319999999998,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9337,6 +9863,8 @@
       "monthlyUSD": 31.682000000000002,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -9374,6 +9902,8 @@
       "monthlyUSD": 2204.7168,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9411,6 +9941,8 @@
       "monthlyUSD": 291.8832,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -9448,6 +9980,8 @@
       "monthlyUSD": 794.1889000000001,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -9485,6 +10019,8 @@
       "monthlyUSD": 183.7264,
       "perVcpuHourUSD": 0.03874351156069363,
       "perGbHourUSD": 0.003228625963391136,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -9522,6 +10058,8 @@
       "monthlyUSD": 5170.5024,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9559,6 +10097,8 @@
       "monthlyUSD": 48.618,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -9596,6 +10136,8 @@
       "monthlyUSD": 84.461,
       "perVcpuHourUSD": 0.034316113989637305,
       "perGbHourUSD": 0.005719352331606217,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [],
       "source": {
         "method": "api",
@@ -9618,6 +10160,8 @@
       "monthlyUSD": 8546.11,
       "perVcpuHourUSD": 0.09121320954907164,
       "perGbHourUSD": 0.0038005503978779847,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "3yr",
@@ -9655,6 +10199,8 @@
       "monthlyUSD": 37.741,
       "perVcpuHourUSD": 0.0839259836065574,
       "perGbHourUSD": 0.0022185567880061968,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -9692,6 +10238,8 @@
       "monthlyUSD": 76.5085625,
       "perVcpuHourUSD": 0.03638,
       "perGbHourUSD": 0.004135,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -9729,6 +10277,8 @@
       "monthlyUSD": 153.017125,
       "perVcpuHourUSD": 0.03638,
       "perGbHourUSD": 0.004135,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -9766,6 +10316,8 @@
       "monthlyUSD": 306.03425,
       "perVcpuHourUSD": 0.03638,
       "perGbHourUSD": 0.004135,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -9803,6 +10355,8 @@
       "monthlyUSD": 612.0685,
       "perVcpuHourUSD": 0.03638,
       "perGbHourUSD": 0.004135,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -9840,6 +10394,8 @@
       "monthlyUSD": 69.52228,
       "perVcpuHourUSD": 0.03275,
       "perGbHourUSD": 0.003717,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -9877,6 +10433,8 @@
       "monthlyUSD": 139.04456,
       "perVcpuHourUSD": 0.03275,
       "perGbHourUSD": 0.003717,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -9914,6 +10472,8 @@
       "monthlyUSD": 278.08912,
       "perVcpuHourUSD": 0.03275,
       "perGbHourUSD": 0.003717,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -9951,6 +10511,8 @@
       "monthlyUSD": 556.17824,
       "perVcpuHourUSD": 0.03275,
       "perGbHourUSD": 0.003717,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -9988,6 +10550,8 @@
       "monthlyUSD": 280.32,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -10025,6 +10589,8 @@
       "monthlyUSD": 140.16,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -10062,6 +10628,8 @@
       "monthlyUSD": 38.544,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -10099,6 +10667,8 @@
       "monthlyUSD": 308.06,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -10136,6 +10706,8 @@
       "monthlyUSD": 887.68,
       "perVcpuHourUSD": 0.056999999999999995,
       "perGbHourUSD": 0.002375,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -10173,6 +10745,8 @@
       "monthlyUSD": 154.03,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -10210,6 +10784,8 @@
       "monthlyUSD": 1775.36,
       "perVcpuHourUSD": 0.056999999999999995,
       "perGbHourUSD": 0.002375,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -10247,6 +10823,8 @@
       "monthlyUSD": 87.6,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -10284,6 +10862,8 @@
       "monthlyUSD": 1401.6,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "3yr",
@@ -10321,6 +10901,8 @@
       "monthlyUSD": 143.08,
       "perVcpuHourUSD": 0.03675,
       "perGbHourUSD": 0.006124999999999999,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "3yr",
@@ -10358,6 +10940,8 @@
       "monthlyUSD": 70.08,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -10395,6 +10979,8 @@
       "monthlyUSD": 572.32,
       "perVcpuHourUSD": 0.03675,
       "perGbHourUSD": 0.006124999999999999,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "3yr",
@@ -10432,6 +11018,8 @@
       "monthlyUSD": 1144.64,
       "perVcpuHourUSD": 0.03675,
       "perGbHourUSD": 0.006124999999999999,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -10469,6 +11057,8 @@
       "monthlyUSD": 77.38,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "3yr",
@@ -10506,6 +11096,8 @@
       "monthlyUSD": 19.272,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "3yr",
@@ -10543,6 +11135,8 @@
       "monthlyUSD": 443.84,
       "perVcpuHourUSD": 0.056999999999999995,
       "perGbHourUSD": 0.002375,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -10580,6 +11174,8 @@
       "monthlyUSD": 560.64,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -10617,6 +11213,8 @@
       "monthlyUSD": 350.4,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -10654,6 +11252,8 @@
       "monthlyUSD": 286.16,
       "perVcpuHourUSD": 0.03675,
       "perGbHourUSD": 0.006124999999999999,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "3yr",
@@ -10691,6 +11291,8 @@
       "monthlyUSD": 700.8,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "3yr",
@@ -10728,6 +11330,8 @@
       "monthlyUSD": 221.92,
       "perVcpuHourUSD": 0.056999999999999995,
       "perGbHourUSD": 0.002375,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "3yr",
@@ -10765,6 +11369,8 @@
       "monthlyUSD": 110.96,
       "perVcpuHourUSD": 0.056999999999999995,
       "perGbHourUSD": 0.002375,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -10802,6 +11408,8 @@
       "monthlyUSD": 71.54,
       "perVcpuHourUSD": 0.03675,
       "perGbHourUSD": 0.006124999999999999,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "3yr",
@@ -10839,6 +11447,8 @@
       "monthlyUSD": 175.2,
       "perVcpuHourUSD": 0.04206521739130435,
       "perGbHourUSD": 0.0035054347826086957,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "3yr",
@@ -10876,6 +11486,8 @@
       "monthlyUSD": 9.636,
       "perVcpuHourUSD": 0.03464166666666666,
       "perGbHourUSD": 0.003299206349206349,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX12",
       "commitments": [
         {
           "term": "3yr",
@@ -10913,6 +11525,8 @@
       "monthlyUSD": 3725.96088,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -10950,6 +11564,8 @@
       "monthlyUSD": 1864.44044,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -10987,6 +11603,8 @@
       "monthlyUSD": 289.30776,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -11024,6 +11642,8 @@
       "monthlyUSD": 74.51694,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -11061,6 +11681,8 @@
       "monthlyUSD": 146.11388,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -11098,6 +11720,8 @@
       "monthlyUSD": 432.50164,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 480,
+      "includedRef": "hetzner:CPX52",
       "commitments": [
         {
           "term": "1yr",
@@ -11135,6 +11759,8 @@
       "monthlyUSD": 575.69552,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -11172,6 +11798,8 @@
       "monthlyUSD": 862.08328,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -11209,6 +11837,8 @@
       "monthlyUSD": 1148.47104,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -11246,6 +11876,8 @@
       "monthlyUSD": 4098.26526,
       "perVcpuHourUSD": 0.03793149720670391,
       "perGbHourUSD": 0.0033479970414201183,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11283,6 +11915,8 @@
       "monthlyUSD": 2795.20066,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11320,6 +11954,8 @@
       "monthlyUSD": 1399.06033,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -11357,6 +11993,8 @@
       "monthlyUSD": 862.08328,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -11394,6 +12032,8 @@
       "monthlyUSD": 647.29246,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -11431,6 +12071,8 @@
       "monthlyUSD": 432.50164,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -11468,6 +12110,8 @@
       "monthlyUSD": 325.10623,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 480,
+      "includedRef": "hetzner:CPX52",
       "commitments": [
         {
           "term": "1yr",
@@ -11505,6 +12149,8 @@
       "monthlyUSD": 217.71082,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -11542,6 +12188,8 @@
       "monthlyUSD": 110.31541,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -11579,6 +12227,8 @@
       "monthlyUSD": 2361.91573,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11616,6 +12266,8 @@
       "monthlyUSD": 1454.60968,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -11653,6 +12305,8 @@
       "monthlyUSD": 1091.6872600000002,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11690,6 +12344,8 @@
       "monthlyUSD": 365.84242,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -11727,6 +12383,8 @@
       "monthlyUSD": 184.38121,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -11764,6 +12422,8 @@
       "monthlyUSD": 93.650605,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -11801,6 +12461,8 @@
       "monthlyUSD": 4720.91146,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11838,6 +12500,8 @@
       "monthlyUSD": 56.617705,
       "perVcpuHourUSD": 0.0351220523032631,
       "perGbHourUSD": 0.0009226487524021594,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -11875,6 +12539,8 @@
       "monthlyUSD": 728.7648399999999,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -11912,6 +12578,8 @@
       "monthlyUSD": 547.30363,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -11949,6 +12617,8 @@
       "monthlyUSD": 5192.71046,
       "perVcpuHourUSD": 0.04804596682960893,
       "perGbHourUSD": 0.002120371810281065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -11986,6 +12656,8 @@
       "monthlyUSD": 108.68,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -12023,6 +12695,8 @@
       "monthlyUSD": 217.36,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -12060,6 +12734,8 @@
       "monthlyUSD": 434.72,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12097,6 +12773,8 @@
       "monthlyUSD": 869.44,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12134,6 +12812,8 @@
       "monthlyUSD": 1738.88,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -12171,6 +12851,8 @@
       "monthlyUSD": 28.8,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -12208,6 +12890,8 @@
       "monthlyUSD": 57.6,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -12245,6 +12929,8 @@
       "monthlyUSD": 115.19,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -12282,6 +12968,8 @@
       "monthlyUSD": 230.38,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -12319,6 +13007,8 @@
       "monthlyUSD": 460.77,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12356,6 +13046,8 @@
       "monthlyUSD": 921.54,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12393,6 +13085,8 @@
       "monthlyUSD": 16.63,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -12430,6 +13124,8 @@
       "monthlyUSD": 22.18,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -12467,6 +13163,8 @@
       "monthlyUSD": 33.26,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -12504,6 +13202,8 @@
       "monthlyUSD": 44.35,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -12541,6 +13241,8 @@
       "monthlyUSD": 66.53,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -12578,6 +13280,8 @@
       "monthlyUSD": 88.7,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -12615,6 +13319,8 @@
       "monthlyUSD": 133.06,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -12652,6 +13358,8 @@
       "monthlyUSD": 177.41,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -12689,6 +13397,8 @@
       "monthlyUSD": 266.11,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -12726,6 +13436,8 @@
       "monthlyUSD": 354.82,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -12763,6 +13475,8 @@
       "monthlyUSD": 532.22,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12800,6 +13514,8 @@
       "monthlyUSD": 532.22,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -12837,6 +13553,8 @@
       "monthlyUSD": 798.34,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -12874,6 +13592,8 @@
       "monthlyUSD": 1064.45,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -12911,6 +13631,8 @@
       "monthlyUSD": 1153.15,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -12948,6 +13670,8 @@
       "monthlyUSD": 2306.3,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -12985,6 +13709,8 @@
       "monthlyUSD": 4612.61,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -13022,6 +13748,8 @@
       "monthlyUSD": 9225.22,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -13059,6 +13787,8 @@
       "monthlyUSD": 23.56,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -13096,6 +13826,8 @@
       "monthlyUSD": 31.42,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -13133,6 +13865,8 @@
       "monthlyUSD": 47.12,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -13170,6 +13904,8 @@
       "monthlyUSD": 62.83,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -13207,6 +13943,8 @@
       "monthlyUSD": 94.25,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -13244,6 +13982,8 @@
       "monthlyUSD": 125.66,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -13281,6 +14021,8 @@
       "monthlyUSD": 188.5,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -13318,6 +14060,8 @@
       "monthlyUSD": 251.33,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -13355,6 +14099,8 @@
       "monthlyUSD": 376.99,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -13392,6 +14138,8 @@
       "monthlyUSD": 502.66,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -13429,6 +14177,8 @@
       "monthlyUSD": 753.98,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -13466,6 +14216,8 @@
       "monthlyUSD": 1445.14,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -13503,6 +14255,8 @@
       "monthlyUSD": 1507.97,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -13540,6 +14294,8 @@
       "monthlyUSD": 25.26,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -13577,6 +14333,8 @@
       "monthlyUSD": 37.88,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -13614,6 +14372,8 @@
       "monthlyUSD": 50.51,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -13651,6 +14411,8 @@
       "monthlyUSD": 75.77,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -13688,6 +14450,8 @@
       "monthlyUSD": 101.02,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -13725,6 +14489,8 @@
       "monthlyUSD": 151.54,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -13762,6 +14528,8 @@
       "monthlyUSD": 202.05,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -13799,6 +14567,8 @@
       "monthlyUSD": 303.07,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -13836,6 +14606,8 @@
       "monthlyUSD": 404.1,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -13873,6 +14645,8 @@
       "monthlyUSD": 606.14,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -13910,6 +14684,8 @@
       "monthlyUSD": 606.14,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -13947,6 +14723,8 @@
       "monthlyUSD": 909.22,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -13984,6 +14762,8 @@
       "monthlyUSD": 808.19,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -14021,6 +14801,8 @@
       "monthlyUSD": 1212.29,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14058,6 +14840,8 @@
       "monthlyUSD": 1212.29,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14095,6 +14879,8 @@
       "monthlyUSD": 1818.43,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14132,6 +14918,8 @@
       "monthlyUSD": 2727.65,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14169,6 +14957,8 @@
       "monthlyUSD": 3636.86,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14206,6 +14996,8 @@
       "monthlyUSD": 12.27,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -14243,6 +15035,8 @@
       "monthlyUSD": 24.55,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -14280,6 +15074,8 @@
       "monthlyUSD": 36.13,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -14317,6 +15113,8 @@
       "monthlyUSD": 48.17,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -14354,6 +15152,8 @@
       "monthlyUSD": 72.26,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -14391,6 +15191,8 @@
       "monthlyUSD": 120.56,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -14428,6 +15230,8 @@
       "monthlyUSD": 96.34,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -14465,6 +15269,8 @@
       "monthlyUSD": 144.51,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -14502,6 +15308,8 @@
       "monthlyUSD": 241.12,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -14539,6 +15347,8 @@
       "monthlyUSD": 144.51,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 480,
+      "includedRef": "hetzner:CPX52",
       "commitments": [
         {
           "term": "1yr",
@@ -14576,6 +15386,8 @@
       "monthlyUSD": 192.68,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -14613,6 +15425,8 @@
       "monthlyUSD": 289.03,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -14650,6 +15464,8 @@
       "monthlyUSD": 482.24,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -14687,6 +15503,8 @@
       "monthlyUSD": 289.03,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -14724,6 +15542,8 @@
       "monthlyUSD": 433.54,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -14761,6 +15581,8 @@
       "monthlyUSD": 964.48,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 600,
+      "includedRef": "hetzner:CCX53",
       "commitments": [
         {
           "term": "1yr",
@@ -14798,6 +15620,8 @@
       "monthlyUSD": 1928.96,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -14835,6 +15659,8 @@
       "monthlyUSD": 12.27,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -14872,6 +15698,8 @@
       "monthlyUSD": 24.55,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -14909,6 +15737,8 @@
       "monthlyUSD": 36.13,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -14946,6 +15776,8 @@
       "monthlyUSD": 7.73,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -14983,6 +15815,8 @@
       "monthlyUSD": 15.17,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -15020,6 +15854,8 @@
       "monthlyUSD": 22.76,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -15057,6 +15893,8 @@
       "monthlyUSD": 27.31,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX21",
       "commitments": [
         {
           "term": "1yr",
@@ -15094,6 +15932,8 @@
       "monthlyUSD": 30.35,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -15131,6 +15971,8 @@
       "monthlyUSD": 45.52,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -15168,6 +16010,8 @@
       "monthlyUSD": 54.63,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -15205,6 +16049,8 @@
       "monthlyUSD": 60.7,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CPX41",
       "commitments": [
         {
           "term": "1yr",
@@ -15242,6 +16088,8 @@
       "monthlyUSD": 91.04,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -15279,6 +16127,8 @@
       "monthlyUSD": 121.39,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CPX51",
       "commitments": [
         {
           "term": "1yr",
@@ -15316,6 +16166,8 @@
       "monthlyUSD": 182.09,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -15353,6 +16205,8 @@
       "monthlyUSD": 13.03,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 40,
+      "includedRef": "hetzner:CPX11",
       "commitments": [
         {
           "term": "1yr",
@@ -15390,6 +16244,8 @@
       "monthlyUSD": 26.06,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -15427,6 +16283,8 @@
       "monthlyUSD": 42.69,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -15464,6 +16322,8 @@
       "monthlyUSD": 42.69,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX21",
       "commitments": [
         {
           "term": "1yr",
@@ -15501,6 +16361,8 @@
       "monthlyUSD": 56.92,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -15538,6 +16400,8 @@
       "monthlyUSD": 85.38,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -15575,6 +16439,8 @@
       "monthlyUSD": 28.63,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -15612,6 +16478,8 @@
       "monthlyUSD": 57.26,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -15649,6 +16517,8 @@
       "monthlyUSD": 114.51,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -15686,6 +16556,8 @@
       "monthlyUSD": 229.03,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -15723,6 +16595,8 @@
       "monthlyUSD": 343.54,
       "perVcpuHourUSD": 0.04513313609467455,
       "perGbHourUSD": 0.0018805473372781065,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -15760,6 +16634,8 @@
       "monthlyUSD": 2649.28,
       "perVcpuHourUSD": 0.02198023598526805,
       "perGbHourUSD": 0.0054799428313503686,
+      "includedStorageGiB": 960,
+      "includedRef": "hetzner:CCX63",
       "commitments": [
         {
           "term": "1yr",
@@ -15797,6 +16673,8 @@
       "monthlyUSD": 538.48,
       "perVcpuHourUSD": 0.07794642857142857,
       "perGbHourUSD": 0.006495535714285715,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -15834,6 +16712,8 @@
       "monthlyUSD": 861.28,
       "perVcpuHourUSD": 0.07794642857142857,
       "perGbHourUSD": 0.006495535714285715,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -15871,6 +16751,8 @@
       "monthlyUSD": 124.61099999999999,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CPX22",
       "commitments": [
         {
           "term": "1yr",
@@ -15901,6 +16783,8 @@
       "monthlyUSD": 249.22199999999998,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CPX31",
       "commitments": [
         {
           "term": "1yr",
@@ -15931,6 +16815,8 @@
       "monthlyUSD": 166.148,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 80,
+      "includedRef": "hetzner:CCX13",
       "commitments": [
         {
           "term": "1yr",
@@ -15961,6 +16847,8 @@
       "monthlyUSD": 332.296,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -15991,6 +16879,8 @@
       "monthlyUSD": 664.592,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -16021,6 +16911,8 @@
       "monthlyUSD": 1329.184,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -16051,6 +16943,8 @@
       "monthlyUSD": 249.22199999999998,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 160,
+      "includedRef": "hetzner:CCX23",
       "commitments": [
         {
           "term": "1yr",
@@ -16081,6 +16975,8 @@
       "monthlyUSD": 498.44399999999996,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 240,
+      "includedRef": "hetzner:CCX33",
       "commitments": [
         {
           "term": "1yr",
@@ -16111,6 +17007,8 @@
       "monthlyUSD": 996.8879999999999,
       "perVcpuHourUSD": 0.0569,
       "perGbHourUSD": 0.014225,
+      "includedStorageGiB": 360,
+      "includedRef": "hetzner:CCX43",
       "commitments": [
         {
           "term": "1yr",
@@ -16137,10 +17035,10 @@
       "arch": "x86_64",
       "vcpu": 2,
       "ramGiB": 2,
-      "onDemandHourlyUSD": 0.018623999999999998,
-      "monthlyUSD": 11.628359999999999,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.0183472,
+      "monthlyUSD": 11.455533,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 40,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 40,
@@ -16149,8 +17047,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16164,10 +17062,10 @@
       "arch": "x86_64",
       "vcpu": 3,
       "ramGiB": 4,
-      "onDemandHourlyUSD": 0.034454399999999996,
-      "monthlyUSD": 21.522359999999995,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.033942320000000005,
+      "monthlyUSD": 21.202483,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 80,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 80,
@@ -16176,8 +17074,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16191,10 +17089,10 @@
       "arch": "x86_64",
       "vcpu": 4,
       "ramGiB": 8,
-      "onDemandHourlyUSD": 0.060644399999999994,
-      "monthlyUSD": 37.81836,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.05974307,
+      "monthlyUSD": 37.256283,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 160,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 160,
@@ -16203,8 +17101,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16218,10 +17116,10 @@
       "arch": "x86_64",
       "vcpu": 8,
       "ramGiB": 16,
-      "onDemandHourlyUSD": 0.1034796,
-      "monthlyUSD": 64.59036,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.10194163000000002,
+      "monthlyUSD": 63.630383,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 240,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 240,
@@ -16230,8 +17128,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16245,10 +17143,10 @@
       "arch": "x86_64",
       "vcpu": 16,
       "ramGiB": 32,
-      "onDemandHourlyUSD": 0.1864728,
-      "monthlyUSD": 116.38835999999999,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.18370134000000002,
+      "monthlyUSD": 114.658533,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 360,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 360,
@@ -16257,8 +17155,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16272,10 +17170,10 @@
       "arch": "x86_64",
       "vcpu": 2,
       "ramGiB": 8,
-      "onDemandHourlyUSD": 0.0513324,
-      "monthlyUSD": 31.998359999999995,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 0.09918955,
+      "monthlyUSD": 61.91033300000001,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 80,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 80,
@@ -16284,8 +17182,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16299,10 +17197,10 @@
       "arch": "x86_64",
       "vcpu": 4,
       "ramGiB": 16,
-      "onDemandHourlyUSD": 0.09603,
-      "monthlyUSD": 59.93436,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 0.19941113000000002,
+      "monthlyUSD": 124.405483,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 160,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 160,
@@ -16311,8 +17209,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16326,10 +17224,10 @@
       "arch": "x86_64",
       "vcpu": 8,
       "ramGiB": 32,
-      "onDemandHourlyUSD": 0.1808856,
-      "monthlyUSD": 112.89635999999999,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 0.32061732000000004,
+      "monthlyUSD": 200.08768300000003,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 240,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 240,
@@ -16338,8 +17236,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16353,10 +17251,10 @@
       "arch": "x86_64",
       "vcpu": 16,
       "ramGiB": 64,
-      "onDemandHourlyUSD": 0.332904,
-      "monthlyUSD": 207.76236,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 0.62667155,
+      "monthlyUSD": 391.013233,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 360,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 360,
@@ -16365,8 +17263,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16380,10 +17278,10 @@
       "arch": "x86_64",
       "vcpu": 32,
       "ramGiB": 128,
-      "onDemandHourlyUSD": 0.7135319999999999,
-      "monthlyUSD": 445.21835999999996,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 1.19818683,
+      "monthlyUSD": 747.636933,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 600,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 600,
@@ -16392,8 +17290,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16407,10 +17305,10 @@
       "arch": "x86_64",
       "vcpu": 48,
       "ramGiB": 192,
-      "onDemandHourlyUSD": 1.1695871999999998,
-      "monthlyUSD": 729.8163599999999,
-      "perVcpuHourUSD": 0.017347303636363637,
-      "perGbHourUSD": 0.0014456086363636362,
+      "onDemandHourlyUSD": 1.9046687000000002,
+      "monthlyUSD": 1188.543083,
+      "perVcpuHourUSD": 0.029650534636363638,
+      "perGbHourUSD": 0.002470877886363637,
       "bundledStorageGiB": 960,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 960,
@@ -16419,8 +17317,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16434,10 +17332,10 @@
       "arch": "x86_64",
       "vcpu": 1,
       "ramGiB": 2,
-      "onDemandHourlyUSD": 0.0148992,
-      "monthlyUSD": 9.30036,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.02843816,
+      "monthlyUSD": 17.762383,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 40,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 40,
@@ -16446,8 +17344,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16461,10 +17359,10 @@
       "arch": "x86_64",
       "vcpu": 2,
       "ramGiB": 4,
-      "onDemandHourlyUSD": 0.0297984,
-      "monthlyUSD": 18.61236,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.04873475000000001,
+      "monthlyUSD": 30.376083,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 80,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 80,
@@ -16473,8 +17371,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16488,10 +17386,10 @@
       "arch": "x86_64",
       "vcpu": 4,
       "ramGiB": 8,
-      "onDemandHourlyUSD": 0.060644399999999994,
-      "monthlyUSD": 37.81836,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.09001595000000001,
+      "monthlyUSD": 56.176833,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 160,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 160,
@@ -16500,8 +17398,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16515,10 +17413,10 @@
       "arch": "x86_64",
       "vcpu": 8,
       "ramGiB": 16,
-      "onDemandHourlyUSD": 0.1044108,
-      "monthlyUSD": 65.17236,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.17177566,
+      "monthlyUSD": 107.204983,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 320,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 320,
@@ -16527,8 +17425,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16542,10 +17440,10 @@
       "arch": "x86_64",
       "vcpu": 12,
       "ramGiB": 24,
-      "onDemandHourlyUSD": 0.1455,
-      "monthlyUSD": 90.78035999999999,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.24711385,
+      "monthlyUSD": 154.219683,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 480,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 480,
@@ -16554,8 +17452,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     },
@@ -16569,10 +17467,10 @@
       "arch": "x86_64",
       "vcpu": 16,
       "ramGiB": 32,
-      "onDemandHourlyUSD": 0.187404,
-      "monthlyUSD": 116.97035999999999,
-      "perVcpuHourUSD": 0.008355295435180305,
-      "perGbHourUSD": 0.0018836538040167736,
+      "onDemandHourlyUSD": 0.31603052000000004,
+      "monthlyUSD": 197.22093300000003,
+      "perVcpuHourUSD": 0.012826820230263158,
+      "perGbHourUSD": 0.0021955818412162163,
       "bundledStorageGiB": 640,
       "bundledStorageType": "local-nvme",
       "includedStorageGiB": 640,
@@ -16581,8 +17479,8 @@
       "commitments": [],
       "source": {
         "method": "api",
-        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1640)",
-        "fetchedAt": "2026-06-06T12:29:21.772Z",
+        "url": "https://api.hetzner.cloud/v1/server_types (EUR→USD 1.1467)",
+        "fetchedAt": "2026-06-20T03:25:38.279Z",
         "confidence": "proxy"
       }
     }
@@ -16590,85 +17488,85 @@
   "providerRates": [
     {
       "provider": "aws",
-      "rateSource": "live",
       "storagePerGbMonthUSD": 0.0864,
       "storageClass": "gp3 SSD (EBS)",
       "bundledStorageGiB": 8,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.09,
       "freeEgressGiB": 100,
+      "rateSource": "live",
       "note": "EBS gp3 + internet egress, published list price",
       "url": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/20260604220057/ap-southeast-7/index.json"
     },
     {
       "provider": "gcp",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.1,
       "storageClass": "PD balanced",
       "bundledStorageGiB": 10,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.12,
       "freeEgressGiB": 200,
+      "rateSource": "published",
       "note": "Persistent Disk balanced + internet egress, published list price",
       "url": "https://cloud.google.com/compute/disks-image-pricing"
     },
     {
       "provider": "azure",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.075,
       "storageClass": "Standard SSD",
       "bundledStorageGiB": 30,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.087,
       "freeEgressGiB": 100,
+      "rateSource": "published",
       "note": "Managed disk + bandwidth, published list price",
       "url": "https://azure.microsoft.com/en-us/pricing/details/managed-disks/"
     },
     {
       "provider": "alibaba",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.1,
       "storageClass": "ESSD PL1",
       "bundledStorageGiB": 40,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.12,
       "freeEgressGiB": 0,
+      "rateSource": "published",
       "note": "ESSD cloud disk + pay-by-traffic egress, published list price",
       "url": "https://www.alibabacloud.com/product/disk"
     },
     {
       "provider": "tencent",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.1,
       "storageClass": "SSD CBS",
       "bundledStorageGiB": 50,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.12,
       "freeEgressGiB": 0,
+      "rateSource": "published",
       "note": "Cloud Block Storage SSD + bill-by-traffic egress, published list price",
       "url": "https://www.tencentcloud.com/products/cbs"
     },
     {
       "provider": "huawei",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.1,
       "storageClass": "EVS SSD",
       "bundledStorageGiB": 40,
       "bundledStorageFree": false,
       "egressPerGbUSD": 0.1,
       "freeEgressGiB": 0,
+      "rateSource": "published",
       "note": "Elastic Volume Service SSD + egress, published list price",
       "url": "https://www.huaweicloud.com/intl/en-us/pricing/"
     },
     {
       "provider": "hetzner",
-      "rateSource": "published",
       "storagePerGbMonthUSD": 0.048,
       "storageClass": "Volume SSD (local disk bundled free)",
       "bundledStorageGiB": 40,
       "bundledStorageFree": true,
       "egressPerGbUSD": 0.0012,
       "freeEgressGiB": 20480,
+      "rateSource": "published",
       "note": "Local NVMe bundled free; 20 TB/mo egress included, then ~$1.20/TB",
       "url": "https://www.hetzner.com/cloud"
     }

@@ -12,6 +12,7 @@ import type { ProviderId } from "@cheap-cloud/schema";
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATA = join(HERE, "..", "data");
 const OUT = join(HERE, "..", "..", "..", "apps", "web", "public", "data");
+const EXTRA_SNAPSHOT_FILES = ["bangkok-2026-06-06.json"];
 
 async function main() {
   await mkdir(OUT, { recursive: true });
@@ -48,6 +49,13 @@ async function main() {
       await Bun.write(join(OUT, `${r.key}.json`), JSON.stringify(JSON.parse(snap)));
       copied++;
     }
+  }
+
+  for (const file of EXTRA_SNAPSHOT_FILES) {
+    const source = join(DATA, file);
+    if (!existsSync(source)) continue;
+    const snap = await readFile(source, "utf8");
+    await Bun.write(join(OUT, file), JSON.stringify(JSON.parse(snap)));
   }
 
   await Bun.write(join(OUT, "regions.json"), JSON.stringify(index, null, 2));
